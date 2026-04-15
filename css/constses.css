@@ -2,9 +2,18 @@
 .box-glass-3d {
   background: var(--glass-bg);
   padding: var(--card-padding);
+  border: 1px solid var(--glass-border);
   border-radius: var(--border-radius);
   transition: var(--transition-fast);
   animation: fade-up 0.5s 1.5s linear backwards 1;
+}
+.widget-regular:hover,
+.box-glass-3d:hover {
+  background: var(--glass-hover);
+  border-color: rgba(169, 128, 128, 0.15);
+  box-shadow:
+    0 25px 50px -12px var(--glass-shadow),
+    0 0 40px rgba(52, 211, 153, 0.1);
 }
 @keyframes fade-up {
   from {
@@ -15,13 +24,6 @@
     opacity: 1;
     transform: translateY(0);
   }
-}
-.widget:hover {
-  background: var(--glass-hover);
-  border-color: rgba(169, 128, 128, 0.15);
-  box-shadow:
-    0 25px 50px -12px var(--glass-shadow),
-    0 0 40px rgba(52, 211, 153, 0.1);
 }
 .aside-menu-custom-icon {
   display: flex;

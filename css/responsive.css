@@ -1,14 +1,12 @@
-@media (max-width: 1400px) {
-}
 @media (max-width: 1200px) {
-  main > .container {
-    gap: 0;
+  nav {
+    margin-bottom: 0;
   }
-  .main-head .main-head-container {
+  .main-head nav {
     display: flex;
     justify-content: space-between;
   }
-  .main-head-container {
+  nav {
     padding: 10px 0;
   }
   .grid-net {
@@ -91,7 +89,7 @@
   .mobile-menu span::after {
     bottom: 8px;
   }
-  .main-head .main-head-container {
+  .main-head nav {
     display: flex;
     justify-content: space-between;
   }
@@ -113,21 +111,26 @@
   .aside-menu ul li .new {
     margin-left: auto;
   }
+  .grid-net,
+  .grid-net-2 {
+    grid-template-columns: 1fr;
+  }
+  .traffic .traffic-body {
+    justify-content: flex-start;
+  }
   main,
   footer {
     margin-left: 0;
   }
 }
+/* Screen 768px Done */
 @media (max-width: 768px) {
   :root {
     --card-padding: 18px;
   }
-  .numbers,
-  .grid-net,
-  .grid-net-2 {
+  .numbers {
     grid-template-columns: 1fr;
   }
-
   .traffic .traffic-body {
     align-items: center;
     justify-content: center;
@@ -140,46 +143,38 @@
     margin: 0 auto;
   }
 }
+/* Screen 480px Done */
 @media (max-width: 480px) {
-  main > .container {
-    padding: 10px 0;
-    gap: 24px;
+  .main-head {
+    margin-bottom: 44px;
+  }
+  .main-head .right-nav {
+    min-width: 100%;
+  }
+  main {
+    padding: 0 15px;
   }
   .main-head {
     flex-direction: column;
     align-items: flex-start;
-    row-gap: 15px;
-  }
-  .main-head-container,
-  .numbers > div,
-  .grid-net > div,
-  .grid-net-2 > div {
-    width: calc(100% - 30px);
-    margin: 0 auto;
   }
   .revenue-analytics .revenue-analytics-head,
   .recent-head,
   .traffic .traffic-body {
     flex-direction: column;
     row-gap: 20px;
+    align-items: flex-start;
   }
-  .main-head .main-head-container {
+  .main-head nav {
     flex-direction: column;
+  }
+  .main-head nav > div {
+    justify-content: space-between;
   }
   .days-numbers .cal-day {
     width: fit-content;
   }
-}
-@media (max-width: 375px) {
-  .main-head {
-    margin-bottom: 20px;
-  }
-  .main-head .main-head-container input {
-    padding: 12px 25px;
-  }
-}
-@media (max-width: 320px) {
-  .main-head .main-head-container input {
-    padding: 12px 0 12px 15px;
+  .traffic .traffic-body {
+    align-items: center;
   }
 }

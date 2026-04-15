@@ -83,436 +83,430 @@
       </div>
     </aside>
     <main>
-      <div class="container">
-        <nav class="main-head">
-          <div class="main-head-container">
-            <h2>Dashboard Overview</h2>
+      <nav class="main-head">
+        <h2>Dashboard Overview</h2>
+        <div class="right-nav">
+          <div class="parent-search">
+            <input type="text" placeholder="Search" />
+          </div>
+          <button aria-label="Notifications">
+            <i class="fa-regular fa-bell"></i>
+          </button>
+          <button aria-label="Turn Light/Dark" id="switch">
+            <i class="fa-regular fa-sun"></i>
+            <i class="fa-solid fa-moon" style="display: none"></i>
+          </button>
+        </div>
+      </nav>
+      <section class="numbers">
+        <div class="box box-1 box-glass-3d">
+          <div>
+            <span class="box-title">Total Revenue</span>
+            <h2 class="box-value">84,254</h2>
+            <span class="box-change">
+              <i class="fa-solid fa-arrow-trend-up"></i>
+              <p>+12.5%</p>
+            </span>
+          </div>
+          <div class="box-icon">$</div>
+        </div>
+        <div class="box box-2 box-glass-3d">
+          <div>
+            <span class="box-title">Active Users</span>
+            <h2 class="box-value">24,521</h2>
+            <span class="box-change">
+              <i class="fa-solid fa-arrow-trend-up"></i>
+              <p>+8.2%</p>
+            </span>
+          </div>
+          <div class="box-icon">
+            <i class="fa-solid fa-user-group"></i>
+          </div>
+        </div>
+        <div class="box box-3 box-glass-3d">
+          <div>
+            <span class="box-title">Total Orders</span>
+            <h2 class="box-value">8,461</h2>
+            <span class="box-change">
+              <i class="fa-solid fa-arrow-trend-down"></i>
+              <p>-3.1%</p>
+            </span>
+          </div>
+          <div class="box-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
+        <div class="box box-4 box-glass-3d">
+          <div>
+            <span class="box-title">Conversion Rate </span>
+            <h2 class="box-value">324</h2>
+            <span class="box-change">
+              <i class="fa-solid fa-arrow-trend-up"></i>
+              <p>+2.4%</p>
+            </span>
+          </div>
+          <div class="box-icon">
+            <i class="fa-solid fa-heart-pulse"></i>
+          </div>
+        </div>
+      </section>
+      <section class="grid-net">
+        <div class="widget-regular revenue-analytics">
+          <div class="revenue-analytics-head">
+            <div class="widget-info">
+              <div class="heading">Revenue Analytics</div>
+              <div class="describe">Monthly revenue overview</div>
+            </div>
+            <div class="buttons-control">
+              <button class="m-btn-s active">Monthly</button>
+              <button class="m-btn-s">Weekly</button>
+              <button class="m-btn-s">Daily</button>
+            </div>
+          </div>
+          <div class="revenue-analytics-body">
+            <div class="left-numbers">
+              <div>$100K</div>
+              <div>$80K</div>
+              <div>$60K</div>
+              <div>$40K</div>
+              <div>$20K</div>
+              <div>$0</div>
+            </div>
+            <div class="right-divs">
+              <div class="right-div">
+                <div class="jan bg-em" style="height: 120px"></div>
+                <span>Jan</span>
+              </div>
+              <div class="right-div">
+                <div class="feb bg-go" style="height: 160px"></div>
+                <span>Feb</span>
+              </div>
+              <div class="right-div">
+                <div class="mar bg-co" style="height: 90px"></div>
+                <span>Mar</span>
+              </div>
+              <div class="right-div">
+                <div class="apr bg-te" style="height: 140px"></div>
+                <span>Apr</span>
+              </div>
+              <div class="right-div">
+                <div class="may bg-am" style="height: 180px"></div>
+                <span>May</span>
+              </div>
+              <div class="right-div">
+                <div class="jun bg-em" style="height: 130px"></div>
+                <span>Jun</span>
+              </div>
+              <div class="right-div">
+                <div class="jul bg-go" style="height: 170px"></div>
+                <span>Jul</span>
+              </div>
+              <div class="right-div">
+                <div class="aug bg-co" style="height: 150px"></div>
+                <span>Aug</span>
+              </div>
+              <div class="right-div">
+                <div class="sep bg-te" style="height: 190px"></div>
+                <span>Sep</span>
+              </div>
+              <div class="right-div">
+                <div class="oct bg-am" style="height: 140px"></div>
+                <span>Oct</span>
+              </div>
+              <div class="right-div">
+                <div class="nov bg-em" style="height: 170px"></div>
+                <span>Nov</span>
+              </div>
+              <div class="right-div">
+                <div class="dec bg-go" style="height: 200px"></div>
+                <span>Dec</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="widget-regular recent-activity">
+          <div class="widget-info">
+            <div class="heading">Recent Activity</div>
+            <div class="describe">Latest transactions</div>
+          </div>
+          <div class="recent-activity-body">
+            <div class="process">
+              <div class="process-icon">JD</div>
+              <div class="process-info">
+                <p>John Doe <span>purchased Premium Plan</span></p>
+                <span class="process-time-loaded"> 2 minutes ago </span>
+              </div>
+            </div>
+            <div class="process">
+              <div class="process-icon">AS</div>
+              <div class="process-info">
+                <p>Anna Smith <span>submitted a support ticket</span></p>
+                <span class="process-time-loaded"> 15 minutes ago </span>
+              </div>
+            </div>
+            <div class="process">
+              <div class="process-icon">MJ</div>
+              <div class="process-info">
+                <p>Mike Johnson <span>upgraded subscription </span></p>
+                <span class="process-time-loaded"> 1 hour ago</span>
+              </div>
+            </div>
+            <div class="process">
+              <div class="process-icon">EW</div>
+              <div class="process-info">
+                <p>Emily White <span> completed onboarding</span></p>
+                <span class="process-time-loaded"> 2 hours ago</span>
+              </div>
+            </div>
+            <div class="process">
+              <div class="process-icon">RB</div>
+              <div class="process-info">
+                <p>Robert Brown <span>requested refund </span></p>
+                <span class="process-time-loaded"> 3 hours ago </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="widget-regular recent-transactions">
+          <div class="recent-head">
+            <div class="widget-info">
+              <div class="heading">Recent Transactions</div>
+              <div class="describe">Latest orders and payments</div>
+            </div>
+            <div class="buttons">
+              <button class="m-btn-s">View All</button>
+              <button class="m-btn-s">Export</button>
+            </div>
+          </div>
+          <div class="recent-body">
+            <table>
+              <thead>
+                <tr>
+                  <th>Customer</th>
+                  <th>Product</th>
+                  <th>Date</th>
+                  <th>Status</th>
+                  <th>Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div>
+                      <div>JD</div>
+                      <div>
+                        <span>John Doe</span>
+                        <p>john@example.com</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Premium Plan</td>
+                  <td>Jan 15, 2025</td>
+                  <td>
+                    <div class="status done">Completed</div>
+                  </td>
+                  <td>$299.00</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>
+                      <div>AS</div>
+                      <div>
+                        <span>Anna Smith</span>
+                        <p>anna@example.com</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Enterprise License</td>
+                  <td>Jan 14, 2025</td>
+                  <td>
+                    <div class="status working">Processing</div>
+                  </td>
+                  <td>$1,499.00</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>
+                      <div>MJ</div>
+                      <div>
+                        <span>Mike Johnson</span>
+                        <p>mike@example.com</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Team Bundle</td>
+                  <td>Jan 13, 2025</td>
+                  <td>
+                    <div class="status done">Completed</div>
+                  </td>
+                  <td>$599.00</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>
+                      <div>EW</div>
+                      <div>
+                        <span>Emily White</span>
+                        <p>emily@example.com</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Starter Plan</td>
+                  <td>Jan 12, 2025</td>
+                  <td>
+                    <div class="status pending">Pending</div>
+                  </td>
+                  <td>$49.00</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>
+                      <div>RB</div>
+                      <div>
+                        <span>Robert Brown</span>
+                        <p>robert@example.com</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Pro Annual</td>
+                  <td>Jan 11, 2025</td>
+                  <td>
+                    <div class="status done">Completed</div>
+                  </td>
+                  <td>$199.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <section class="grid-net-2">
+        <div class="widget-regular cal">
+          <div class="cal-head">
+            <div class="widget-info">
+              <div class="heading">January 2025</div>
+            </div>
+            <div class="btns">
+              <button aria-label="To Left" class="m-btn-s">
+                <i class="fa fa-arrow-left"></i>
+              </button>
+              <button aria-label="To right" class="m-btn-s">
+                <i class="fa fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="cal-body">
+            <div class="days-numbers">
+              <span class="cal-name-day">Sun</span>
+              <span class="cal-name-day">Mon</span>
+              <span class="cal-name-day">Tue</span>
+              <span class="cal-name-day">Wed</span>
+              <span class="cal-name-day">Thu</span>
+              <span class="cal-name-day">Fri</span>
+              <span class="cal-name-day">Sat</span>
+              <span class="cal-day previous">29</span>
+              <span class="cal-day previous">30</span>
+              <span class="cal-day previous">31</span>
+              <span class="cal-day today">1</span>
+              <span class="cal-day">2</span>
+              <span class="cal-day">3</span>
+              <span class="cal-day">4</span>
+              <span class="cal-day">5</span>
+              <span class="cal-day">6</span>
+              <span class="cal-day">7</span>
+              <span class="cal-day">8</span>
+              <span class="cal-day">9</span>
+              <span class="cal-day">10</span>
+              <span class="cal-day">11</span>
+              <span class="cal-day">12</span>
+              <span class="cal-day">13</span>
+              <span class="cal-day">14</span>
+              <span class="cal-day">15</span>
+              <span class="cal-day">16</span>
+              <span class="cal-day">17</span>
+              <span class="cal-day">18</span>
+              <span class="cal-day">19</span>
+              <span class="cal-day">20</span>
+              <span class="cal-day">21</span>
+              <span class="cal-day">22</span>
+              <span class="cal-day">23</span>
+              <span class="cal-day">24</span>
+              <span class="cal-day">25</span>
+              <span class="cal-day">26</span>
+              <span class="cal-day">27</span>
+              <span class="cal-day">28</span>
+              <span class="cal-day">29</span>
+              <span class="cal-day">30</span>
+              <span class="cal-day">31</span>
+              <span class="cal-day pervious">1</span>
+            </div>
+          </div>
+        </div>
+        <div class="widget-regular traffic">
+          <div class="traffic-head">
+            <div class="widget-info">
+              <div class="heading">Traffic Sources</div>
+              <div class="describe">User acquisition breakdown</div>
+            </div>
+          </div>
+          <div class="traffic-body">
             <div>
-              <input type="text" placeholder="Search" />
-              <div>
-                <button aria-label="Notifications">
-                  <i class="fa-regular fa-bell"></i>
-                </button>
-                <button aria-label="Turn Light/Dark" id="switch">
-                  <i class="fa-regular fa-sun"></i>
-                  <i class="fa-solid fa-moon" style="display: none"></i>
-                </button>
+              <div class="shape">
+                <span>24.5K</span>
+                <p>Visitors</p>
+              </div>
+            </div>
+            <div class="info-numbers">
+              <div>Organic Search (50%)</div>
+              <div>Social Media (30%)</div>
+              <div>Direct Traffic (20%)</div>
+            </div>
+          </div>
+        </div>
+        <div class="widget-regular project-pro">
+          <div class="project-pro-head">
+            <div class="widget-info">
+              <div class="heading">Project Progress</div>
+              <div class="describe">Current sprint status</div>
+            </div>
+          </div>
+          <div class="project-pro-body">
+            <div class="box">
+              <div class="progress-info">
+                <span>UI Design</span> <span>85%</span>
+              </div>
+              <div class="progress-road">
+                <div class="progress" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="progress-info">
+                <span>Backend API</span> <span>62%</span>
+              </div>
+              <div class="progress-road">
+                <div class="progress" style="width: 62%"></div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="progress-info">
+                <span>Testing</span> <span>45%</span>
+              </div>
+              <div class="progress-road">
+                <div class="progress" style="width: 45%"></div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="progress-info">
+                <span>Documentation</span>
+                <span>28%</span>
+              </div>
+              <div class="progress-road">
+                <div class="progress" style="width: 28%"></div>
               </div>
             </div>
           </div>
-        </nav>
-        <section>
-          <div class="numbers">
-            <div class="box box-1 box-glass-3d">
-              <div>
-                <span class="box-title">Total Revenue</span>
-                <h2 class="box-value">84,254</h2>
-                <span class="box-change">
-                  <i class="fa-solid fa-arrow-trend-up"></i>
-                  <p>+12.5%</p>
-                </span>
-              </div>
-              <div class="box-icon">$</div>
-            </div>
-            <div class="box box-2 box-glass-3d">
-              <div>
-                <span class="box-title">Active Users</span>
-                <h2 class="box-value">24,521</h2>
-                <span class="box-change">
-                  <i class="fa-solid fa-arrow-trend-up"></i>
-                  <p>+8.2%</p>
-                </span>
-              </div>
-              <div class="box-icon">
-                <i class="fa-solid fa-user-group"></i>
-              </div>
-            </div>
-            <div class="box box-3 box-glass-3d">
-              <div>
-                <span class="box-title">Total Orders</span>
-                <h2 class="box-value">8,461</h2>
-                <span class="box-change">
-                  <i class="fa-solid fa-arrow-trend-down"></i>
-                  <p>-3.1%</p>
-                </span>
-              </div>
-              <div class="box-icon">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </div>
-            </div>
-            <div class="box box-4 box-glass-3d">
-              <div>
-                <span class="box-title">Conversion Rate </span>
-                <h2 class="box-value">324</h2>
-                <span class="box-change">
-                  <i class="fa-solid fa-arrow-trend-up"></i>
-                  <p>+2.4%</p>
-                </span>
-              </div>
-              <div class="box-icon">
-                <i class="fa-solid fa-heart-pulse"></i>
-              </div>
-            </div>
-          </div>
-          <div class="grid-net">
-            <div class="widget-regular revenue-analytics">
-              <div class="revenue-analytics-head">
-                <div class="widget-info">
-                  <div class="heading">Revenue Analytics</div>
-                  <div class="describe">Monthly revenue overview</div>
-                </div>
-                <div class="buttons-control">
-                  <button class="m-btn-s active">Monthly</button>
-                  <button class="m-btn-s">Weekly</button>
-                  <button class="m-btn-s">Daily</button>
-                </div>
-              </div>
-              <div class="revenue-analytics-body">
-                <div class="left-numbers">
-                  <div>$100K</div>
-                  <div>$80K</div>
-                  <div>$60K</div>
-                  <div>$40K</div>
-                  <div>$20K</div>
-                  <div>$0</div>
-                </div>
-                <div class="right-divs">
-                  <div class="right-div">
-                    <div class="jan bg-em" style="height: 120px"></div>
-                    <span>Jan</span>
-                  </div>
-                  <div class="right-div">
-                    <div class="feb bg-go" style="height: 160px"></div>
-                    <span>Feb</span>
-                  </div>
-                  <div class="right-div">
-                    <div class="mar bg-co" style="height: 90px"></div>
-                    <span>Mar</span>
-                  </div>
-                  <div class="right-div">
-                    <div class="apr bg-te" style="height: 140px"></div>
-                    <span>Apr</span>
-                  </div>
-                  <div class="right-div">
-                    <div class="may bg-am" style="height: 180px"></div>
-                    <span>May</span>
-                  </div>
-                  <div class="right-div">
-                    <div class="jun bg-em" style="height: 130px"></div>
-                    <span>Jun</span>
-                  </div>
-                  <div class="right-div">
-                    <div class="jul bg-go" style="height: 170px"></div>
-                    <span>Jul</span>
-                  </div>
-                  <div class="right-div">
-                    <div class="aug bg-co" style="height: 150px"></div>
-                    <span>Aug</span>
-                  </div>
-                  <div class="right-div">
-                    <div class="sep bg-te" style="height: 190px"></div>
-                    <span>Sep</span>
-                  </div>
-                  <div class="right-div">
-                    <div class="oct bg-am" style="height: 140px"></div>
-                    <span>Oct</span>
-                  </div>
-                  <div class="right-div">
-                    <div class="nov bg-em" style="height: 170px"></div>
-                    <span>Nov</span>
-                  </div>
-                  <div class="right-div">
-                    <div class="dec bg-go" style="height: 200px"></div>
-                    <span>Dec</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="widget-regular recent-activity">
-              <div class="widget-info">
-                <div class="heading">Recent Activity</div>
-                <div class="describe">Latest transactions</div>
-              </div>
-              <div class="recent-activity-body">
-                <div class="process">
-                  <div class="process-icon">JD</div>
-                  <div class="process-info">
-                    <p>John Doe <span>purchased Premium Plan</span></p>
-                    <span class="process-time-loaded"> 2 minutes ago </span>
-                  </div>
-                </div>
-                <div class="process">
-                  <div class="process-icon">AS</div>
-                  <div class="process-info">
-                    <p>Anna Smith <span>submitted a support ticket</span></p>
-                    <span class="process-time-loaded"> 15 minutes ago </span>
-                  </div>
-                </div>
-                <div class="process">
-                  <div class="process-icon">MJ</div>
-                  <div class="process-info">
-                    <p>Mike Johnson <span>upgraded subscription </span></p>
-                    <span class="process-time-loaded"> 1 hour ago</span>
-                  </div>
-                </div>
-                <div class="process">
-                  <div class="process-icon">EW</div>
-                  <div class="process-info">
-                    <p>Emily White <span> completed onboarding</span></p>
-                    <span class="process-time-loaded"> 2 hours ago</span>
-                  </div>
-                </div>
-                <div class="process">
-                  <div class="process-icon">RB</div>
-                  <div class="process-info">
-                    <p>Robert Brown <span>requested refund </span></p>
-                    <span class="process-time-loaded"> 3 hours ago </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="widget-regular recent-transactions">
-              <div class="recent-head">
-                <div class="widget-info">
-                  <div class="heading">Recent Transactions</div>
-                  <div class="describe">Latest orders and payments</div>
-                </div>
-                <div class="buttons">
-                  <button class="m-btn-s">View All</button>
-                  <button class="m-btn-s">Export</button>
-                </div>
-              </div>
-              <div class="recent-body">
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Customer</th>
-                      <th>Product</th>
-                      <th>Date</th>
-                      <th>Status</th>
-                      <th>Amount</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <div>
-                          <div>JD</div>
-                          <div>
-                            <span>John Doe</span>
-                            <p>john@example.com</p>
-                          </div>
-                        </div>
-                      </td>
-                      <td>Premium Plan</td>
-                      <td>Jan 15, 2025</td>
-                      <td>
-                        <div class="status done">Completed</div>
-                      </td>
-                      <td>$299.00</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div>
-                          <div>AS</div>
-                          <div>
-                            <span>Anna Smith</span>
-                            <p>anna@example.com</p>
-                          </div>
-                        </div>
-                      </td>
-                      <td>Enterprise License</td>
-                      <td>Jan 14, 2025</td>
-                      <td>
-                        <div class="status working">Processing</div>
-                      </td>
-                      <td>$1,499.00</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div>
-                          <div>MJ</div>
-                          <div>
-                            <span>Mike Johnson</span>
-                            <p>mike@example.com</p>
-                          </div>
-                        </div>
-                      </td>
-                      <td>Team Bundle</td>
-                      <td>Jan 13, 2025</td>
-                      <td>
-                        <div class="status done">Completed</div>
-                      </td>
-                      <td>$599.00</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div>
-                          <div>EW</div>
-                          <div>
-                            <span>Emily White</span>
-                            <p>emily@example.com</p>
-                          </div>
-                        </div>
-                      </td>
-                      <td>Starter Plan</td>
-                      <td>Jan 12, 2025</td>
-                      <td>
-                        <div class="status pending">Pending</div>
-                      </td>
-                      <td>$49.00</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div>
-                          <div>RB</div>
-                          <div>
-                            <span>Robert Brown</span>
-                            <p>robert@example.com</p>
-                          </div>
-                        </div>
-                      </td>
-                      <td>Pro Annual</td>
-                      <td>Jan 11, 2025</td>
-                      <td>
-                        <div class="status done">Completed</div>
-                      </td>
-                      <td>$199.00</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-          <div class="grid-net-2">
-            <div class="widget-regular cal">
-              <div class="cal-head">
-                <div class="widget-info">
-                  <div class="heading">January 2025</div>
-                </div>
-                <div class="btns">
-                  <button aria-label="To Left" class="m-btn-s">
-                    <i class="fa fa-arrow-left"></i>
-                  </button>
-                  <button aria-label="To right" class="m-btn-s">
-                    <i class="fa fa-arrow-right"></i>
-                  </button>
-                </div>
-              </div>
-              <div class="cal-body">
-                <div class="days-numbers">
-                  <span class="cal-name-day">Sun</span>
-                  <span class="cal-name-day">Mon</span>
-                  <span class="cal-name-day">Tue</span>
-                  <span class="cal-name-day">Wed</span>
-                  <span class="cal-name-day">Thu</span>
-                  <span class="cal-name-day">Fri</span>
-                  <span class="cal-name-day">Sat</span>
-                  <span class="cal-day previous">29</span>
-                  <span class="cal-day previous">30</span>
-                  <span class="cal-day previous">31</span>
-                  <span class="cal-day today">1</span>
-                  <span class="cal-day">2</span>
-                  <span class="cal-day">3</span>
-                  <span class="cal-day">4</span>
-                  <span class="cal-day">5</span>
-                  <span class="cal-day">6</span>
-                  <span class="cal-day">7</span>
-                  <span class="cal-day">8</span>
-                  <span class="cal-day">9</span>
-                  <span class="cal-day">10</span>
-                  <span class="cal-day">11</span>
-                  <span class="cal-day">12</span>
-                  <span class="cal-day">13</span>
-                  <span class="cal-day">14</span>
-                  <span class="cal-day">15</span>
-                  <span class="cal-day">16</span>
-                  <span class="cal-day">17</span>
-                  <span class="cal-day">18</span>
-                  <span class="cal-day">19</span>
-                  <span class="cal-day">20</span>
-                  <span class="cal-day">21</span>
-                  <span class="cal-day">22</span>
-                  <span class="cal-day">23</span>
-                  <span class="cal-day">24</span>
-                  <span class="cal-day">25</span>
-                  <span class="cal-day">26</span>
-                  <span class="cal-day">27</span>
-                  <span class="cal-day">28</span>
-                  <span class="cal-day">29</span>
-                  <span class="cal-day">30</span>
-                  <span class="cal-day">31</span>
-                  <span class="cal-day pervious">1</span>
-                </div>
-              </div>
-            </div>
-            <div class="widget-regular traffic">
-              <div class="traffic-head">
-                <div class="widget-info">
-                  <div class="heading">Traffic Sources</div>
-                  <div class="describe">User acquisition breakdown</div>
-                </div>
-              </div>
-              <div class="traffic-body">
-                <div>
-                  <div class="shape">
-                    <span>24.5K</span>
-                    <p>Visitors</p>
-                  </div>
-                </div>
-                <div class="info-numbers">
-                  <div>Organic Search (50%)</div>
-                  <div>Social Media (30%)</div>
-                  <div>Direct Traffic (20%)</div>
-                </div>
-              </div>
-            </div>
-            <div class="widget-regular project-pro">
-              <div class="project-pro-head">
-                <div class="widget-info">
-                  <div class="heading">Project Progress</div>
-                  <div class="describe">Current sprint status</div>
-                </div>
-              </div>
-              <div class="project-pro-body">
-                <div class="box">
-                  <div class="progress-info">
-                    <span>UI Design</span> <span>85%</span>
-                  </div>
-                  <div class="progress-road">
-                    <div class="progress" style="width: 85%"></div>
-                  </div>
-                </div>
-                <div class="box">
-                  <div class="progress-info">
-                    <span>Backend API</span> <span>62%</span>
-                  </div>
-                  <div class="progress-road">
-                    <div class="progress" style="width: 62%"></div>
-                  </div>
-                </div>
-                <div class="box">
-                  <div class="progress-info">
-                    <span>Testing</span> <span>45%</span>
-                  </div>
-                  <div class="progress-road">
-                    <div class="progress" style="width: 45%"></div>
-                  </div>
-                </div>
-                <div class="box">
-                  <div class="progress-info">
-                    <span>Documentation</span>
-                    <span>28%</span>
-                  </div>
-                  <div class="progress-road">
-                    <div class="progress" style="width: 28%"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
     <footer>
       <p>Copyright © 2026 Your Company. Designed by <span>ORG UNK</span></p>
