@@ -5,7 +5,7 @@
   border: 1px solid var(--glass-border);
   border-radius: var(--border-radius);
   transition: var(--transition-fast);
-  animation: fade-up 0.5s 1.5s linear backwards 1;
+  /* animation: fade-up 0.5s 1.5s linear backwards 1; */
 }
 .widget-regular:hover,
 .box-glass-3d:hover {
@@ -36,7 +36,11 @@
   width: 8px;
   height: 8px;
   border-radius: 1px;
-  border: 1.5px solid #fff;
+  border: 1.5px solid var(--text-secondary);
+  transition: var(--transition-fast);
+}
+a:has(.aside-menu-custom-icon):hover span {
+  border-color: var(--text-primary);
 }
 .widget-info .heading {
   font-size: 18px;
@@ -107,6 +111,48 @@
 .recent-activity-body .process:nth-of-type(4) .process-icon {
   background: linear-gradient(135deg, var(--success), var(--emerald));
 }
-.recent-activity-body .process:nth-of-type(5) .process-icon {
+.recent-activity-body .process:nth-of-type(5) .process-icon,
+.w-g {
   background: linear-gradient(135deg, var(--warning), var(--gold));
+}
+.main-head-users {
+  row-gap: 10px;
+}
+.status {
+  padding: 8px 12px;
+  border-radius: 20px;
+  position: relative;
+  font-size: 12px;
+  width: fit-content;
+}
+.status::before {
+  content: "";
+  position: relative;
+  width: 5px;
+  height: 5px;
+  border-radius: 10px;
+}
+.done {
+  background: rgba(16, 185, 129, 0.15);
+  color: var(--success);
+}
+.done::before {
+  background: var(--success);
+  box-shadow: 0 0 8px var(--success);
+}
+.working {
+  background: rgba(59, 130, 246, 0.15);
+  color: var(--info);
+}
+.working::before {
+  background: var(--info);
+  box-shadow: 0 0 8px var(--info);
+}
+.pending {
+  background: rgba(245, 158, 11, 0.15);
+  color: var(--warning);
+}
+.pending::before {
+  background: var(--warning);
+  box-shadow: 0 0 8px var(--warning);
 }

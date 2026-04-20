@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <title>Glass Dash | Users</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="My Dash Board" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="imgs/dashboard.webp" type="image/webp" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&amp;family=Space+Mono:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/constses.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="org org-1"></div>
+    <div class="org org-2"></div>
+    <div class="org org-3"></div>
+    <button class="mobile-menu" id="aside-switch" aria-label="Main Menu">
+      <span></span>
+    </button>
+    <aside id="aside">
+      <div class="aside holder">
+        <div class="aside-logo">
+          <span class="letter">G</span>
+          <span class="name">ORG UNK</span>
+        </div>
+        <div class="aside-menu">
+          <div class="main-menu">
+            <label>Main Menu</label>
+            <ul>
+              <li>
+                <a href="index.html">
+                  <span class="aside-menu-custom-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </span>
+                  <span class="aside-ul-item"> Dashboard </span>
+                </a>
+              </li>
+              <li>
+                <a href="analytics.html">
+                  <i class="fa-solid fa-layer-group"></i>
+                  <span class="aside-ul-item">Analytics</span>
+                  <span class="new">New</span>
+                </a>
+              </li>
+              <li>
+                <a href="users.html" class="active">
+                  <i class="fa-solid fa-user"></i>
+                  <span class="aside-ul-item">Users</span>
+                </a>
+              </li>
+              <li>
+                <a href="settings.html">
+                  <i class="fa-solid fa-gear"></i>
+                  <span class="aside-ul-item">Settings</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="account">
+          <label>Account</label>
+          <a href="#">
+            <i class="fa-sharp fa-solid fa-arrow-right-from-bracket"></i>
+            <div>Logout</div>
+          </a>
+        </div>
+        <a href="#" class="coder">
+          <span>OR</span>
+          <div>
+            <p>ORIGINAL</p>
+            <span>Administrator</span>
+          </div>
+          <div class="custom-arrow"></div>
+        </a>
+      </div>
+    </aside>
+    <main>
+      <nav class="main-head main-head-users">
+        <div class="left-nav">
+          <h2>Users</h2>
+          <div>
+            <p>
+              <a href="index.html">Dashboard</a>
+              <span>/</span>
+              <span>Users</span>
+            </p>
+          </div>
+        </div>
+        <div class="right-nav">
+          <div class="parent-search">
+            <input type="text" placeholder="Search" />
+          </div>
+          <button aria-label="Notifications">
+            <i class="fa-regular fa-bell"></i>
+          </button>
+          <button aria-label="Turn Light/Dark" id="switch">
+            <i class="fa-regular fa-sun"></i>
+            <i class="fa-solid fa-moon" style="display: none"></i>
+          </button>
+        </div>
+      </nav>
+      <section class="numbers">
+        <div class="box box-1 box-1-analytics box-glass-3d">
+          <div>
+            <span class="box-title">Total Users</span>
+            <h2 class="box-value">24,521</h2>
+            <span class="box-change">
+              <i class="fa-solid fa-arrow-trend-up"></i>
+              <p>+8.2%</p>
+            </span>
+          </div>
+          <div class="box-icon"><i class="fa-solid fa-users"></i></div>
+        </div>
+        <div class="box box-2 box-glass-3d">
+          <div>
+            <span class="box-title">Active Now</span>
+            <h2 class="box-value">1,234</h2>
+            <span class="box-change">
+              <i class="fa-solid fa-arrow-trend-up"></i>
+              <p>+12.5%</p>
+            </span>
+          </div>
+          <div class="box-icon">
+            <i class="fa-regular fa-clock"></i>
+          </div>
+        </div>
+        <div class="box box-3 box-3 box-glass-3d">
+          <div>
+            <span class="box-title">New Today</span>
+            <h2 class="box-value">156</h2>
+            <span class="box-change">
+              <i class="fa-solid fa-arrow-trend-down"></i>
+              <p>-3.1%</p>
+            </span>
+          </div>
+          <div class="box-icon">
+            <i class="fa-solid fa-user-plus"></i>
+          </div>
+        </div>
+        <div class="box box-4 box-4-users box-glass-3d">
+          <div>
+            <span class="box-title">Premium Users</span>
+            <h2 class="box-value">4,892</h2>
+            <span class="box-change">
+              <i class="fa-solid fa-arrow-trend-up"></i>
+              <p>+18.7%</p>
+            </span>
+          </div>
+          <div class="box-icon">
+            <i class="fa-regular fa-star"></i>
+          </div>
+        </div>
+      </section>
+      <section class="grid-net">
+        <div
+          class="widget-regular recent-transactions recent-transactions-users"
+        >
+          <div class="recent-head">
+            <div class="widget-info">
+              <div class="heading">All Users</div>
+              <div class="describe">Manage your user base</div>
+            </div>
+            <div class="buttons">
+              <button class="m-btn-s">+ Add User</button>
+              <button class="m-btn-s">Export</button>
+            </div>
+          </div>
+          <div class="recent-body">
+            <table>
+              <thead>
+                <tr>
+                  <th>User</th>
+                  <th>Role</th>
+                  <th>Status</th>
+                  <th>Joined</th>
+                  <th>Last Active</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div>
+                      <div>JD</div>
+                      <div>
+                        <span>John Doe</span>
+                        <p>john@example.com</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Administrator</td>
+                  <td>
+                    <div class="status done">Active</div>
+                  </td>
+                  <td>Jan 15, 2024</td>
+                  <td>2 mins ago</td>
+                  <td><button class="m-btn-s">Edit</button></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>
+                      <div>AS</div>
+                      <div>
+                        <span>Anna Smith</span>
+                        <p>anna@example.com</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Editor</td>
+                  <td>
+                    <div class="status done">Active</div>
+                  </td>
+                  <td>Feb 22, 2024</td>
+                  <td>15 mins ago</td>
+                  <td>
+                    <button class="m-btn-s">Edit</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>
+                      <div>MJ</div>
+                      <div>
+                        <span>Mike Johnson</span>
+                        <p>mike@example.com</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>User</td>
+                  <td>
+                    <div class="status pending">Away</div>
+                  </td>
+                  <td>Mar 10, 2024</td>
+                  <td>2 hours ago</td>
+                  <td><button class="m-btn-s">Edit</button></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>
+                      <div>EW</div>
+                      <div>
+                        <span>Emily White</span>
+                        <p>emily@example.com</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Moderator</td>
+                  <td>
+                    <div class="status done">Active</div>
+                  </td>
+                  <td>Apr 5, 2024</td>
+                  <td>30 mins ago</td>
+                  <td><button class="m-btn-s">Edit</button></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>
+                      <div>RB</div>
+                      <div>
+                        <span>Robert Brown</span>
+                        <p>robert@example.com</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>User</td>
+                  <td>
+                    <div class="status working">Offline</div>
+                  </td>
+                  <td>May 18, 2024</td>
+                  <td>3 days ago</td>
+                  <td>
+                    <button class="m-btn-s">Edit</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>
+                      <div class="w-g">SL</div>
+                      <div>
+                        <span>Sarah Lee</span>
+                        <p>sarah@example.com</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Editor</td>
+                  <td>
+                    <div class="status done">Active</div>
+                  </td>
+                  <td>Jul 22, 2024</td>
+                  <td>1 hour ago</td>
+                  <td><button class="m-btn-s">Edit</button></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>
+                      <div
+                        style="
+                          background: linear-gradient(
+                            135deg,
+                            var(--info),
+                            var(--emerald)
+                          );
+                        "
+                      >
+                        DK
+                      </div>
+                      <div>
+                        <span>David Kim</span>
+                        <p>david@example.com</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>User</td>
+                  <td>
+                    <div class="status done">Active</div>
+                  </td>
+                  <td>Jul 22, 2024</td>
+                  <td>1 hour ago</td>
+                  <td>
+                    <button class="m-btn-s">Edit</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>
+                      <div
+                        style="
+                          background: linear-gradient(
+                            135deg,
+                            var(--danger),
+                            var(--coral)
+                          );
+                          background: linear-gradient(
+                            135deg,
+                            var(--danger),
+                            var(--coral)
+                          );
+                        "
+                      >
+                        LM
+                      </div>
+                      <div>
+                        <span> Lisa Martinez</span>
+                        <p>lisa@example.com</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Moderator</td>
+                  <td>
+                    <div class="status pending">Away</div>
+                  </td>
+                  <td>Aug 14, 2024</td>
+                  <td>4 hour ago</td>
+                  <td>
+                    <button class="m-btn-s">Edit</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright © 2026 Your Company. Designed by <span>ORG UNK</span></p>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,17 +1,4 @@
 @media (max-width: 1200px) {
-  nav {
-    margin-bottom: 0;
-  }
-  .main-head nav {
-    display: flex;
-    justify-content: space-between;
-  }
-  nav {
-    padding: 10px 0;
-  }
-  .grid-net {
-    grid-template-columns: 1fr;
-  }
   .revenue-analytics-body,
   .recent-body {
     overflow-x: scroll;
@@ -38,6 +25,21 @@
   .recent-body table tr th,
   .recent-body table tr td {
     padding: 12px 8px;
+  }
+}
+@media (max-width: 1200px) {
+  nav {
+    margin-bottom: 0;
+  }
+  .main-head nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  nav {
+    padding: 10px 0;
+  }
+  .grid-net {
+    grid-template-columns: 1fr;
   }
   .grid-net > div {
     grid-column: 1/4;
@@ -176,5 +178,9 @@
   }
   .traffic .traffic-body {
     align-items: center;
+  }
+  /*! Users Page */
+  .main-head-users {
+    margin-bottom: 75px;
   }
 }

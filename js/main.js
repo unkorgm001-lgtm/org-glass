@@ -1,5 +1,6 @@
 let cards = document.querySelectorAll(".box-glass-3d");
 let values = document.querySelectorAll(".numbers .box .box-value");
+let asideNav = document.querySelectorAll("aside ul li a");
 cards.forEach((el) => {
   el.addEventListener("mousemove", (e) => {
     let r = el.getBoundingClientRect();
@@ -7,8 +8,8 @@ cards.forEach((el) => {
     let xPre = (e.clientX - r.left) / r.width - 0.5;
     let yPre = (e.clientY - r.top) / r.height - 0.5;
     // Calc Degree
-    let rx = xPre * 40;
-    let ry = -yPre * 35;
+    let rx = xPre * -30;
+    let ry = -yPre * -25;
     // Put Effect
     el.style.transform = `translateZ(10px) perspective(1000px) rotateX(${ry}deg) rotateY(${rx}deg)`;
   });
@@ -54,3 +55,9 @@ document.getElementById("aside-switch").onclick = function () {
     document.getElementById("aside").style.transform = "translateX(-100%)";
   else document.getElementById("aside").style.transform = "translateX(0)";
 };
+asideNav.forEach((e) => {
+  e.addEventListener("click", () => {
+    document.querySelector(".background").style.animation =
+      "on-load var(--transition-normal) forwards linear running";
+  });
+});

@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <title>Glass Dash | Analytics</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="My Dash Board" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="imgs/dashboard.webp" type="image/webp" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&amp;family=Space+Mono:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/constses.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="org org-1"></div>
+    <div class="org org-2"></div>
+    <div class="org org-3"></div>
+    <button class="mobile-menu" id="aside-switch" aria-label="Main Menu">
+      <span></span>
+    </button>
+    <aside id="aside">
+      <div class="aside holder">
+        <div class="aside-logo">
+          <span class="letter">G</span>
+          <span class="name">ORG UNK</span>
+        </div>
+        <div class="aside-menu">
+          <div class="main-menu">
+            <label>Main Menu</label>
+            <ul>
+              <li>
+                <a href="index.html">
+                  <span class="aside-menu-custom-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </span>
+                  <span class="aside-ul-item"> Dashboard </span>
+                </a>
+              </li>
+              <li>
+                <a href="analytics.html" class="active">
+                  <i class="fa-solid fa-layer-group"></i>
+                  <span class="aside-ul-item">Analytics</span>
+                  <span class="new">New</span>
+                </a>
+              </li>
+              <li>
+                <a href="users.html">
+                  <i class="fa-solid fa-user"></i>
+                  <span class="aside-ul-item">Users</span>
+                </a>
+              </li>
+              <li>
+                <a href="settings.html">
+                  <i class="fa-solid fa-gear"></i>
+                  <span class="aside-ul-item">Settings</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="account">
+          <label>Account</label>
+          <a href="#">
+            <i class="fa-sharp fa-solid fa-arrow-right-from-bracket"></i>
+            <div>Logout</div>
+          </a>
+        </div>
+        <a href="#" class="coder">
+          <span>OR</span>
+          <div>
+            <p>ORIGINAL</p>
+            <span>Administrator</span>
+          </div>
+          <div class="custom-arrow"></div>
+        </a>
+      </div>
+    </aside>
+    <main>
+      <nav class="main-head">
+        <div class="left-nav">
+          <h2>Analytics</h2>
+          <div>
+            <p>
+              <a href="index.html">Dashboard</a>
+              <span>/</span>
+              <span>Analytics</span>
+            </p>
+          </div>
+        </div>
+        <div class="right-nav">
+          <div class="parent-search">
+            <input type="text" placeholder="Search" />
+          </div>
+          <button aria-label="Notifications">
+            <i class="fa-regular fa-bell"></i>
+          </button>
+          <button aria-label="Turn Light/Dark" id="switch">
+            <i class="fa-regular fa-sun"></i>
+            <i class="fa-solid fa-moon" style="display: none"></i>
+          </button>
+        </div>
+      </nav>
+      <section class="numbers">
+        <div class="box box-1 box-1-analytics box-glass-3d">
+          <div>
+            <span class="box-title">Page Views</span>
+            <h2 class="box-value">1,284,521</h2>
+            <span class="box-change">
+              <i class="fa-solid fa-arrow-trend-up"></i>
+              <p>+24.5%</p>
+            </span>
+          </div>
+          <div class="box-icon"><i class="fa-regular fa-eye"></i></div>
+        </div>
+        <div class="box box-2 box-glass-3d">
+          <div>
+            <span class="box-title">Unique Visitors</span>
+            <h2 class="box-value">452,892</h2>
+            <span class="box-change">
+              <i class="fa-solid fa-arrow-trend-up"></i>
+              <p>+18.3%</p>
+            </span>
+          </div>
+          <div class="box-icon">
+            <i class="fa-regular fa-user"></i>
+          </div>
+        </div>
+        <div class="box box-3 box-3-analytics box-glass-3d">
+          <div>
+            <span class="box-title">Bounce Rate</span>
+            <h2 class="box-value">328</h2>
+            <span class="box-change">
+              <i class="fa-solid fa-arrow-trend-down"></i>
+              <p>+5.2%</p>
+            </span>
+          </div>
+          <div class="box-icon">
+            <i class="fa-solid fa-arrow-trend-up"></i>
+          </div>
+        </div>
+        <div class="box box-4 box-4-analytics box-glass-3d">
+          <div>
+            <span class="box-title">Avg. Session</span>
+            <h2 class="box-value">432</h2>
+            <span class="box-change">
+              <i class="fa-solid fa-arrow-trend-up"></i>
+              <p>+12.1%</p>
+            </span>
+          </div>
+          <div class="box-icon">
+            <i class="fa-regular fa-clock"></i>
+          </div>
+        </div>
+      </section>
+      <section class="grid-net">
+        <div class="widget-regular revenue-analytics">
+          <div class="revenue-analytics-head">
+            <div class="widget-info">
+              <div class="heading">Traffic Overview</div>
+              <div class="describe">Daily visitors and page views</div>
+            </div>
+            <div class="buttons-control">
+              <button class="m-btn-s">7 Days</button>
+              <button class="m-btn-s active">30 Days</button>
+              <button class="m-btn-s">90 Days</button>
+            </div>
+          </div>
+          <div class="revenue-analytics-body">
+            <div class="left-numbers">
+              <div>50K</div>
+              <div>40K</div>
+              <div>30K</div>
+              <div>20K</div>
+              <div>10K</div>
+              <div>0</div>
+            </div>
+            <div class="right-divs right-divs-analytics">
+              <div class="right-div">
+                <div class="jan bg-em" style="height: 80px"></div>
+                <span>1</span>
+              </div>
+              <div class="right-div">
+                <div class="feb bg-em" style="height: 95px"></div>
+                <span>2</span>
+              </div>
+              <div class="right-div">
+                <div class="mar bg-em" style="height: 70px"></div>
+                <span>3</span>
+              </div>
+              <div class="right-div">
+                <div class="apr bg-em" style="height: 110px"></div>
+                <span>4</span>
+              </div>
+              <div class="right-div">
+                <div class="may bg-em" style="height: 130px"></div>
+                <span>5</span>
+              </div>
+
+              <div class="right-div">
+                <div class="jun bg-go" style="height: 145px"></div>
+                <span>6</span>
+              </div>
+              <div class="right-div">
+                <div class="jul bg-go" style="height: 120px"></div>
+                <span>7</span>
+              </div>
+              <div class="right-div">
+                <div class="aug bg-go" style="height: 100px"></div>
+                <span>8</span>
+              </div>
+              <div class="right-div">
+                <div class="sep bg-go" style="height: 135px"></div>
+                <span>9</span>
+              </div>
+              <div class="right-div">
+                <div class="oct bg-go" style="height: 155px"></div>
+                <span>10</span>
+              </div>
+
+              <div class="right-div">
+                <div class="nov bg-co" style="height: 140px"></div>
+                <span>11</span>
+              </div>
+              <div class="right-div">
+                <div class="dec bg-co" style="height: 125px"></div>
+                <span>12</span>
+              </div>
+              <div class="right-div">
+                <div class="jan bg-co" style="height: 160px"></div>
+                <span>13</span>
+              </div>
+              <div class="right-div">
+                <div class="feb bg-co" style="height: 175px"></div>
+                <span>14</span>
+              </div>
+              <div class="right-div">
+                <div class="mar bg-co" style="height: 150px"></div>
+                <span>15</span>
+              </div>
+
+              <div class="right-div">
+                <div class="apr bg-te" style="height: 165px"></div>
+                <span>16</span>
+              </div>
+              <div class="right-div">
+                <div class="may bg-te" style="height: 145px"></div>
+                <span>17</span>
+              </div>
+              <div class="right-div">
+                <div class="jun bg-te" style="height: 130px"></div>
+                <span>18</span>
+              </div>
+              <div class="right-div">
+                <div class="jul bg-te" style="height: 155px"></div>
+                <span>19</span>
+              </div>
+              <div class="right-div">
+                <div class="aug bg-te" style="height: 180px"></div>
+                <span>20</span>
+              </div>
+
+              <div class="right-div">
+                <div class="sep bg-am" style="height: 170px"></div>
+                <span>21</span>
+              </div>
+              <div class="right-div">
+                <div class="oct bg-am" style="height: 160px"></div>
+                <span>22</span>
+              </div>
+              <div class="right-div">
+                <div class="nov bg-am" style="height: 185px"></div>
+                <span>23</span>
+              </div>
+              <div class="right-div">
+                <div class="dec bg-am" style="height: 175px"></div>
+                <span>24</span>
+              </div>
+              <div class="right-div">
+                <div class="dec bg-am" style="height: 165px"></div>
+                <span>25</span>
+              </div>
+
+              <div class="right-div">
+                <div class="dec bg-em" style="height: 190px"></div>
+                <span>26</span>
+              </div>
+              <div class="right-div">
+                <div class="dec bg-em" style="height: 175px"></div>
+                <span>27</span>
+              </div>
+              <div class="right-div">
+                <div class="dec bg-em" style="height: 195px"></div>
+                <span>28</span>
+              </div>
+              <div class="right-div">
+                <div class="dec bg-em" style="height: 185px"></div>
+                <span>29</span>
+              </div>
+              <div class="right-div">
+                <div class="dec bg-em" style="height: 200px"></div>
+                <span>30</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="widget-regular recent-activity">
+          <div class="widget-info">
+            <div class="heading">Top Pages</div>
+            <div class="describe">Most visited pages</div>
+          </div>
+          <div class="recent-activity-body recent-activity-body-analytics">
+            <div class="process">
+              <div class="process-icon">1</div>
+              <div class="process-info">
+                <p>/dashboard</p>
+                <span class="process-time-loaded">45,234 views</span>
+              </div>
+            </div>
+            <div class="process">
+              <div class="process-icon">2</div>
+              <div class="process-info">
+                <p>/products</p>
+                <span class="process-time-loaded">32,891 views</span>
+              </div>
+            </div>
+            <div class="process">
+              <div class="process-icon">3</div>
+              <div class="process-info">
+                <p>/pricing</p>
+                <span class="process-time-loaded">28,456 views</span>
+              </div>
+            </div>
+            <div class="process">
+              <div class="process-icon">4</div>
+              <div class="process-info">
+                <p>/about</p>
+                <span class="process-time-loaded">19,234 views</span>
+              </div>
+            </div>
+            <div class="process">
+              <div class="process-icon">5</div>
+              <div class="process-info">
+                <p>/contact</p>
+                <span class="process-time-loaded">12,567 views</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="grid-net-2">
+        <div class="widget-regular traffic traffic-analytics">
+          <div class="traffic-head">
+            <div class="widget-info">
+              <div class="heading">Devices</div>
+              <div class="describe">Traffic by device type</div>
+            </div>
+          </div>
+          <div class="traffic-body">
+            <div>
+              <div class="shape">
+                <span>100%</span>
+                <p>Total</p>
+              </div>
+            </div>
+            <div class="info-numbers">
+              <div>Mobile (55%)</div>
+              <div>Desktop (35%)</div>
+              <div>Tablet (10%)</div>
+            </div>
+          </div>
+        </div>
+        <div class="widget-regular project-pro browsers">
+          <div class="project-pro-head">
+            <div class="widget-info">
+              <div class="heading">Browsers</div>
+              <div class="describe">Traffic by browser</div>
+            </div>
+          </div>
+          <div class="project-pro-body">
+            <div class="box">
+              <div class="progress-info">
+                <span>Chrome</span> <span>64%</span>
+              </div>
+              <div class="progress-road">
+                <div class="progress" style="width: 64%"></div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="progress-info">
+                <span>Safari</span> <span>22%</span>
+              </div>
+              <div class="progress-road">
+                <div class="progress" style="width: 22%"></div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="progress-info">
+                <span>Firefox</span> <span>8%</span>
+              </div>
+              <div class="progress-road">
+                <div class="progress" style="width: 8%"></div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="progress-info">
+                <span>Edge</span>
+                <span>6%</span>
+              </div>
+              <div class="progress-road">
+                <div class="progress" style="width: 6%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="widget-regular project-pro">
+          <div class="project-pro-head">
+            <div class="widget-info">
+              <div class="heading">Countries</div>
+              <div class="describe">Top traffic sources</div>
+            </div>
+          </div>
+          <div class="project-pro-body">
+            <div class="box">
+              <div class="progress-info">
+                <span> <small>🇺🇸</small> United States</span> <span>38%</span>
+              </div>
+              <div class="progress-road">
+                <div class="progress" style="width: 38%"></div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="progress-info">
+                <span><small>🇬🇧</small> United Kingdom</span> <span>18%</span>
+              </div>
+              <div class="progress-road">
+                <div class="progress" style="width: 18%"></div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="progress-info">
+                <span><small>🇩🇪</small> Germany</span> <span>12%</span>
+              </div>
+              <div class="progress-road">
+                <div class="progress" style="width: 12%"></div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="progress-info">
+                <span><small>🇨🇦 </small>Canada</span>
+                <span>9%</span>
+              </div>
+              <div class="progress-road">
+                <div class="progress" style="width: 9%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright © 2026 Your Company. Designed by <span>ORG UNK</span></p>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

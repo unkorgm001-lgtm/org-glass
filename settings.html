@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <title>Glass Dash | Settings</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="My Dash Board" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="imgs/dashboard.webp" type="image/webp" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&amp;family=Space+Mono:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/constses.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="org org-1"></div>
+    <div class="org org-2"></div>
+    <div class="org org-3"></div>
+    <button class="mobile-menu" id="aside-switch" aria-label="Main Menu">
+      <span></span>
+    </button>
+    <aside id="aside">
+      <div class="aside holder">
+        <div class="aside-logo">
+          <span class="letter">G</span>
+          <span class="name">ORG UNK</span>
+        </div>
+        <div class="aside-menu">
+          <div class="main-menu">
+            <label>Main Menu</label>
+            <ul>
+              <li>
+                <a href="index.html">
+                  <span class="aside-menu-custom-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </span>
+                  <span class="aside-ul-item"> Dashboard </span>
+                </a>
+              </li>
+              <li>
+                <a href="analytics.html">
+                  <i class="fa-solid fa-layer-group"></i>
+                  <span class="aside-ul-item">Analytics</span>
+                  <span class="new">New</span>
+                </a>
+              </li>
+              <li>
+                <a href="users.html">
+                  <i class="fa-solid fa-user"></i>
+                  <span class="aside-ul-item">Users</span>
+                </a>
+              </li>
+              <li>
+                <a href="settings.html" class="active">
+                  <i class="fa-solid fa-gear"></i>
+                  <span class="aside-ul-item">Settings</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="account">
+          <label>Account</label>
+          <a href="#">
+            <i class="fa-sharp fa-solid fa-arrow-right-from-bracket"></i>
+            <div>Logout</div>
+          </a>
+        </div>
+        <a href="#" class="coder">
+          <span>OR</span>
+          <div>
+            <p>ORIGINAL</p>
+            <span>Administrator</span>
+          </div>
+          <div class="custom-arrow"></div>
+        </a>
+      </div>
+    </aside>
+    <main>
+      <nav class="main-head main-head-settings">
+        <div class="left-nav">
+          <h2>Settings</h2>
+          <div>
+            <p>
+              <a href="index.html">Dashboard</a>
+              <span>/</span>
+              <span>Settings</span>
+            </p>
+          </div>
+        </div>
+        <div class="right-nav">
+          <button aria-label="Notifications">
+            <i class="fa-regular fa-bell"></i>
+          </button>
+          <button aria-label="Turn Light/Dark" id="switch">
+            <i class="fa-regular fa-sun"></i>
+            <i class="fa-solid fa-moon" style="display: none"></i>
+          </button>
+        </div>
+      </nav>
+      <div class="settings-content">
+        <div class="widget-regular setting-aside">
+          <ul>
+            <li class="active">
+              <a href="#" data-name="profile">
+                <i class="fa-regular fa-user"></i>
+                <span>Profile</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" data-name="security">
+                <i class="fa-solid fa-lock"></i>
+                <span>Security</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" data-name="notifications">
+                <i class="fa-regular fa-bell"></i>
+                <span>Notifications</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" data-name="appearance">
+                <i class="fa-regular fa-circle"></i>
+                <span>Appearance</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" data-name="billing">
+                <i class="fa-regular fa-credit-card"></i>
+                <span>Billing</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="widget-regular setting-show">
+          <div class="profile setting-active" style="display: none">
+            <div class="profile-head">
+              <div class="setting-letter">
+                OR
+                <i class="fa-solid fa-file-pen"></i>
+              </div>
+              <div class="info">
+                <span>ORG UNK</span>
+                <p>admin@templatemo.com • Administrator</p>
+              </div>
+            </div>
+            <div class="profile-body">
+              <div class="setting-section profile-information">
+                <h3>Profile Information</h3>
+                <form>
+                  <div class="form-fields">
+                    <div class="form-row">
+                      <div class="first-inp">
+                        <label>First Name</label>
+                        <input type="text" value="ORIGINAL" required />
+                      </div>
+                      <div class="last-inp">
+                        <label>Last Name</label>
+                        <input type="text" value="ORG" required />
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="first-inp">
+                        <label>Email Address</label>
+                        <input type="text" value="admin@org.com" required />
+                      </div>
+                      <div class="last-inp">
+                        <label>Phone Number</label>
+                        <input type="text" value="+1 (555) 123-4567" required />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bio">
+                    <label>Bio</label>
+                    <textarea>
+Dashboard template creator and web design enthusiast. Building beautiful interfaces for modern applications.</textarea
+                    >
+                  </div>
+                </form>
+              </div>
+              <div class="setting-section profile-preferences">
+                <h3>Preference</h3>
+                <div class="select">
+                  <div class="select-describe">
+                    <span>Language</span>
+                    <p>Select your preferred language</p>
+                  </div>
+                  <div class="select-s">
+                    <select aria-label="Select Language">
+                      <option value="english-us">English (US)</option>
+                      <option value="english-uk">English (UK)</option>
+                      <option value="spanish">Spanish</option>
+                      <option value="french">French</option>
+                      <option value="german">German</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="select">
+                  <div class="select-describe">
+                    <span>Timezone</span>
+                    <p>Set your local timezone</p>
+                  </div>
+                  <div class="select-s">
+                    <select aria-label="Select Language">
+                      <option value="pacific">UTC -08:00 (Pacific)</option>
+                      <option value="eastern">UTC -05:00 (Eastern)</option>
+                      <option value="london">UTC +00:00 (London)</option>
+                      <option value="berlin">UTC +01:00 (Berlin)</option>
+                      <option value="tokyo">UTC +09:00 (Tokyo)</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="setting-buttons">
+                <button class="btn-em">Save Changes</button>
+                <button class="btn-tr">Cancel</button>
+              </div>
+            </div>
+          </div>
+          <div class="security">
+            <div class="setting-section">
+              <h3>Change Password</h3>
+            </div>
+            <div class="setting-section">
+              <form>
+                <div class="form-fields">
+                  <div class="form-row">
+                    <div class="input-group all">
+                      <label>Current Password</label>
+                      <input
+                        type="password"
+                        placeholder="Enter current password"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="input-group first-inp">
+                      <label>New Password</label>
+                      <input type="password" placeholder="Enter new password" />
+                    </div>
+                    <div class="input-group last-inp">
+                      <label>Confirm New Password</label>
+                      <input
+                        type="password"
+                        placeholder="Confirm current password"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="setting-section">
+              <h3>Two-Factor Authentication</h3>
+              <div class="check-boxes">
+                <div class="check-box">
+                  <div class="text">
+                    <span>Enable 2FA</span>
+                    <p>Add an extra layer of security to your account</p>
+                  </div>
+                  <label for="f2">
+                    <input type="checkbox" id="f2" />
+                    <div class="toggle"></div>
+                  </label>
+                </div>
+                <div class="check-box">
+                  <div class="text">
+                    <span>SMS Authentication</span>
+                    <p>Receive codes via SMS</p>
+                  </div>
+                  <label for="f2">
+                    <input type="checkbox" id="f2" />
+                    <div class="toggle"></div>
+                  </label>
+                </div>
+                <div class="check-box">
+                  <div class="text">
+                    <span>Authenticator App</span>
+                    <p>Use Google Authenticator or similar</p>
+                  </div>
+                  <label for="f2">
+                    <input type="checkbox" id="f2" />
+                    <div class="toggle"></div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="setting-section">
+              <h3>Active Sessions</h3>
+              <div class="sessions">
+                <div class="session">
+                  <div class="text">
+                    <span></span>
+                    <p></p>
+                  </div>
+                  <div class="status done">Active</div>
+                </div>
+              </div>
+            </div>
+            <div class="setting-buttons">
+              <button class="btn-em">Updata Password</button>
+              <button class="btn-tr">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Copyright © 2026 Your Company. Designed by <span>ORG UNK</span></p>
+    </footer>
+  </body>
+</html>
