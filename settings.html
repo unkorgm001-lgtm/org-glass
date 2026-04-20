@@ -143,7 +143,7 @@
           </ul>
         </div>
         <div class="widget-regular setting-show">
-          <div class="profile setting-active" style="margin-bottom: 32px;">
+          <div class="profile setting-active" style="margin-bottom: 32px">
             <div class="profile-head">
               <div class="setting-letter">
                 OR
@@ -190,7 +190,7 @@ Dashboard template creator and web design enthusiast. Building beautiful interfa
               </div>
               <div class="setting-section profile-preferences">
                 <h3>Preference</h3>
-                <div class="select">
+                <div class="section-row">
                   <div class="select-describe">
                     <span>Language</span>
                     <p>Select your preferred language</p>
@@ -205,7 +205,7 @@ Dashboard template creator and web design enthusiast. Building beautiful interfa
                     </select>
                   </div>
                 </div>
-                <div class="select">
+                <div class="section-row">
                   <div class="select-describe">
                     <span>Timezone</span>
                     <p>Set your local timezone</p>
@@ -227,7 +227,7 @@ Dashboard template creator and web design enthusiast. Building beautiful interfa
               </div>
             </div>
           </div>
-          <div class="security">
+          <div class="security" style="margin-bottom: 32px">
             <div class="setting-section">
               <h3>Change Password</h3>
             </div>
@@ -262,7 +262,7 @@ Dashboard template creator and web design enthusiast. Building beautiful interfa
             <div class="setting-section">
               <h3>Two-Factor Authentication</h3>
               <div class="check-boxes">
-                <div class="check-box">
+                <div class="section-row check-box">
                   <div class="text">
                     <span>Enable 2FA</span>
                     <p>Add an extra layer of security to your account</p>
@@ -272,23 +272,23 @@ Dashboard template creator and web design enthusiast. Building beautiful interfa
                     <div class="toggle"></div>
                   </label>
                 </div>
-                <div class="check-box">
+                <div class="section-row check-box">
                   <div class="text">
                     <span>SMS Authentication</span>
                     <p>Receive codes via SMS</p>
                   </div>
-                  <label for="f2">
-                    <input type="checkbox" id="f2" />
+                  <label for="sms">
+                    <input type="checkbox" checked id="sms" />
                     <div class="toggle"></div>
                   </label>
                 </div>
-                <div class="check-box">
+                <div class="section-row check-box">
                   <div class="text">
                     <span>Authenticator App</span>
                     <p>Use Google Authenticator or similar</p>
                   </div>
-                  <label for="f2">
-                    <input type="checkbox" id="f2" />
+                  <label for="app">
+                    <input type="checkbox" id="app" />
                     <div class="toggle"></div>
                   </label>
                 </div>
@@ -297,12 +297,26 @@ Dashboard template creator and web design enthusiast. Building beautiful interfa
             <div class="setting-section">
               <h3>Active Sessions</h3>
               <div class="sessions">
-                <div class="session">
+                <div class="section-row session">
                   <div class="text">
-                    <span></span>
-                    <p></p>
+                    <span>Chrome on MacOS</span>
+                    <p>San Francisco, CA • Current session</p>
                   </div>
-                  <div class="status done">Active</div>
+                  <div class="setting-status status done">Active</div>
+                </div>
+                <div class="section-row session">
+                  <div class="text">
+                    <span>Safari on iPhone</span>
+                    <p>San Francisco, CA • 2 hours ago</p>
+                  </div>
+                  <button class="setting-session-btn">Revoke</button>
+                </div>
+                <div class="section-row session">
+                  <div class="text">
+                    <span>Firefox on Windows</span>
+                    <p>New York, NY • 3 days ago</p>
+                  </div>
+                  <button class="setting-session-btn">Revoke</button>
                 </div>
               </div>
             </div>
@@ -311,11 +325,204 @@ Dashboard template creator and web design enthusiast. Building beautiful interfa
               <button class="btn-tr">Cancel</button>
             </div>
           </div>
+          <div class="notifications" style="margin-bottom: 32px">
+            <div class="setting-section">
+              <h3>Email Notifications</h3>
+              <div class="boxes">
+                <div class="section-row box">
+                  <div class="text">
+                    <span>Account Activity</span>
+                    <p>Get notified about sign-ins and security changes</p>
+                  </div>
+                  <div class="check-box">
+                    <label for="acc">
+                      <input type="checkbox" checked id="acc" />
+                      <div class="toggle"></div>
+                    </label>
+                  </div>
+                </div>
+                <div class="section-row box">
+                  <div class="text">
+                    <span>New Features</span>
+                    <p>Learn about new features and updates</p>
+                  </div>
+                  <div class="check-box">
+                    <label for="fea">
+                      <input type="checkbox" checked id="fea" />
+                      <div class="toggle"></div>
+                    </label>
+                  </div>
+                </div>
+                <div class="section-row box">
+                  <div class="text">
+                    <span>Weekly Reports</span>
+                    <p>Receive weekly analytics summary</p>
+                  </div>
+                  <div class="check-box">
+                    <label for="rep">
+                      <input type="checkbox" id="rep" />
+                      <div class="toggle"></div>
+                    </label>
+                  </div>
+                </div>
+                <div class="section-row box">
+                  <div class="text">
+                    <span>Marketing Emails</span>
+                    <p>Receive news about promotions and offers</p>
+                  </div>
+                  <div class="check-box">
+                    <label for="em">
+                      <input type="checkbox" id="em" />
+                      <div class="toggle"></div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="setting-section">
+              <h3>Push Notifications</h3>
+              <div class="boxes">
+                <div class="section-row box">
+                  <div class="text">
+                    <span>Desktop Notifications</span>
+                    <p>Show notifications on your desktop</p>
+                  </div>
+                  <div class="check-box">
+                    <label for="des">
+                      <input type="checkbox" checked id="des" />
+                      <div class="toggle"></div>
+                    </label>
+                  </div>
+                </div>
+                <div class="section-row box">
+                  <div class="text">
+                    <span>Mobile Push</span>
+                    <p>Receive push notifications on mobile</p>
+                  </div>
+                  <div class="check-box">
+                    <label for="push">
+                      <input type="checkbox" checked id="push" />
+                      <div class="toggle"></div>
+                    </label>
+                  </div>
+                </div>
+                <div class="section-row box">
+                  <div class="text">
+                    <span>Sound</span>
+                    <p>Play sound for notifications</p>
+                  </div>
+                  <div class="check-box">
+                    <label for="play">
+                      <input type="checkbox" id="play" />
+                      <div class="toggle"></div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="setting-buttons">
+              <button class="btn-em">Save Preferences</button>
+              <button class="btn-tr">Reset to Default</button>
+            </div>
+          </div>
+          <div class="appearance">
+            <div class="setting-section">
+              <h3>Theme</h3>
+              <div class="section-row box-border">
+                <div class="text">
+                  <span>Color Mode</span>
+                  <p>Choose your preferred color mode</p>
+                </div>
+                <div class="select-s">
+                  <select aria-label="Select Language">
+                    <option value="dark-mode">Dark Mode</option>
+                    <option value="light-mode">Light Mode</option>
+                    <option value="system-default">System Default</option>
+                  </select>
+                </div>
+              </div>
+              <div class="section-row">
+                <div class="select">
+                  <div class="text">
+                    <span>Accent Color</span>
+                    <p>Choose your preferred accent color</p>
+                  </div>
+                </div>
+                <div class="select-s">
+                  <select aria-label="Select Language">
+                    <option value="emerald-default">Emerald (Default)</option>
+                    <option value="blue">Blue</option>
+                    <option value="purple">Purple</option>
+                    <option value="orange">Orange</option>
+                    <option value="pink">Pink</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="setting-section">
+              <h3>Display</h3>
+              <div class="appearance-boxes">
+                <div class="section-row box">
+                  <div class="text">
+                    <span>Account Activity</span>
+                    <p>Get notified about sign-ins and security changes</p>
+                  </div>
+                  <div class="check-box">
+                    <label for="acc">
+                      <input type="checkbox" checked id="acc" />
+                      <div class="toggle"></div>
+                    </label>
+                  </div>
+                </div>
+                <div class="section-row box">
+                  <div class="text">
+                    <span>New Features</span>
+                    <p>Learn about new features and updates</p>
+                  </div>
+                  <div class="check-box">
+                    <label for="fea">
+                      <input type="checkbox" checked id="fea" />
+                      <div class="toggle"></div>
+                    </label>
+                  </div>
+                </div>
+                <div class="section-row box">
+                  <div class="text">
+                    <span>Weekly Reports</span>
+                    <p>Receive weekly analytics summary</p>
+                  </div>
+                  <div class="check-box">
+                    <label for="rep">
+                      <input type="checkbox" id="rep" />
+                      <div class="toggle"></div>
+                    </label>
+                  </div>
+                </div>
+                <div class="section-row box">
+                  <div class="text">
+                    <span>Marketing Emails</span>
+                    <p>Receive news about promotions and offers</p>
+                  </div>
+                  <div class="check-box">
+                    <label for="em">
+                      <input type="checkbox" id="em" />
+                      <div class="toggle"></div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="setting-buttons">
+              <button class="btn-em">Apply Changes</button>
+              <button class="btn-tr">Reset to Default</button>
+            </div>
+          </div>
         </div>
       </div>
     </main>
     <footer>
       <p>Copyright © 2026 Your Company. Designed by <span>ORG UNK</span></p>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
