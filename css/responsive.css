@@ -144,21 +144,36 @@
     width: 70%;
     margin: 0 auto;
   }
+  /*! Setting Page */
+  .settings-content {
+    grid-template-columns: 1fr;
+  }
+  .setting-aside ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px 5px;
+  }
+  .setting-aside ul li:not(:first-child) {
+    margin-top: 0px;
+  }
+  .settings-content ul li {
+    width: calc((100% / 3) - 10px);
+  }
 }
 /* Screen 480px Done */
 @media (max-width: 480px) {
   .main-head {
     margin-bottom: 44px;
+    flex-direction: column;
+    align-items: flex-start;
   }
-  .main-head .right-nav {
+  .main-head:not(.main-head-settings) .right-nav {
     min-width: 100%;
   }
   main {
     padding: 0 15px;
-  }
-  .main-head {
-    flex-direction: column;
-    align-items: flex-start;
   }
   .revenue-analytics .revenue-analytics-head,
   .recent-head,
@@ -167,20 +182,30 @@
     row-gap: 20px;
     align-items: flex-start;
   }
-  .main-head nav {
-    flex-direction: column;
-  }
-  .main-head nav > div {
-    justify-content: space-between;
-  }
   .days-numbers .cal-day {
     width: fit-content;
   }
   .traffic .traffic-body {
     align-items: center;
   }
+  /*! Analytics Page */
+  .main-head-analytics {
+    margin-bottom: 75px;
+  }
+  .main-head-analytics .left-nav {
+    margin-bottom: 10px;
+  }
   /*! Users Page */
   .main-head-users {
     margin-bottom: 75px;
+  }
+  /*! Setting Page */
+  .main-head-settings {
+    flex-direction: row;
+    align-items: center;
+    padding-top: 75px;
+  }
+  .settings-content ul li {
+    width: calc((100% / 2) - 10px);
   }
 }
