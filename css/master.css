@@ -1064,7 +1064,6 @@ footer span:hover {
   font-size: 16px;
   cursor: pointer;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 .setting-aside ul li i {

@@ -214,3 +214,8 @@
     width: calc((100% / 2) - 10px);
   }
 }
+@media (max-width: 350px) {
+  .settings-content ul li {
+    width: calc((100% / 1) - 10px);
+  }
+}
