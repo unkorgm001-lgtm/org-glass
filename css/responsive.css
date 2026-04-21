@@ -52,6 +52,25 @@
     padding: 15px 10px;
   }
 }
+@media (max-width: 1024px) {
+  /*! Setting Page */
+  .settings-content {
+    grid-template-columns: 1fr;
+  }
+  .setting-aside ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px 5px;
+  }
+  .setting-aside ul li:not(:first-child) button {
+    margin-top: 0px;
+  }
+  .settings-content ul li {
+    width: calc((100% / 5) - 10px);
+  }
+}
 @media (max-width: 992px) {
   .mobile-menu {
     display: flex;
@@ -143,20 +162,6 @@
   .days-numbers .cal-day {
     width: 70%;
     margin: 0 auto;
-  }
-  /*! Setting Page */
-  .settings-content {
-    grid-template-columns: 1fr;
-  }
-  .setting-aside ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px 5px;
-  }
-  .setting-aside ul li:not(:first-child) {
-    margin-top: 0px;
   }
   .settings-content ul li {
     width: calc((100% / 3) - 10px);

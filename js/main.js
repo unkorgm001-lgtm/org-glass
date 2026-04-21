@@ -1,6 +1,8 @@
 let cards = document.querySelectorAll(".box-glass-3d");
 let values = document.querySelectorAll(".numbers .box .box-value");
 let asideNav = document.querySelectorAll("aside ul li a");
+let settingAsideButtons = document.querySelectorAll(".setting-aside-button");
+let settingShow = document.querySelectorAll(".setting-show > div");
 cards.forEach((el) => {
   el.addEventListener("mousemove", (e) => {
     let r = el.getBoundingClientRect();
@@ -60,4 +62,18 @@ asideNav.forEach((e) => {
     document.querySelector(".background").style.animation =
       "on-load var(--transition-normal) forwards linear running";
   });
+});
+settingAsideButtons.forEach((e) => {
+  e.onclick = () => {
+    for (let i = 0; i < settingAsideButtons.length; i++) {
+      settingAsideButtons[i].classList.remove("active");
+    }
+    e.classList.add("active");
+    for (let i = 0; i < settingShow.length; i++) {
+      settingShow[i].classList.remove("setting-active");
+    }
+    document
+      .querySelector(`.${e.getAttribute("data-name")}`)
+      .classList.add("setting-active");
+  };
 });

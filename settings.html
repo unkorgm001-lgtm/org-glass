@@ -110,40 +110,40 @@
       <div class="settings-content">
         <div class="widget-regular setting-aside">
           <ul>
-            <li class="active">
-              <a href="#" data-name="profile">
+            <li>
+              <button class="setting-aside-button active" data-name="profile">
                 <i class="fa-regular fa-user"></i>
                 <span>Profile</span>
-              </a>
+              </button>
             </li>
             <li>
-              <a href="#" data-name="security">
+              <button class="setting-aside-button" data-name="security">
                 <i class="fa-solid fa-lock"></i>
                 <span>Security</span>
-              </a>
+              </button>
             </li>
             <li>
-              <a href="#" data-name="notifications">
+              <button class="setting-aside-button" data-name="notifications">
                 <i class="fa-regular fa-bell"></i>
                 <span>Notifications</span>
-              </a>
+              </button>
             </li>
             <li>
-              <a href="#" data-name="appearance">
+              <button class="setting-aside-button" data-name="appearance">
                 <i class="fa-regular fa-circle"></i>
                 <span>Appearance</span>
-              </a>
+              </button>
             </li>
             <li>
-              <a href="#" data-name="billing">
+              <button class="setting-aside-button" data-name="billing">
                 <i class="fa-regular fa-credit-card"></i>
                 <span>Billing</span>
-              </a>
+              </button>
             </li>
           </ul>
         </div>
         <div class="widget-regular setting-show">
-          <div class="profile setting-active" style="margin-bottom: 32px">
+          <div class="profile setting-active">
             <div class="profile-head">
               <div class="setting-letter">
                 OR
@@ -227,7 +227,7 @@ Dashboard template creator and web design enthusiast. Building beautiful interfa
               </div>
             </div>
           </div>
-          <div class="security" style="margin-bottom: 32px">
+          <div class="security">
             <div class="setting-section">
               <h3>Change Password</h3>
             </div>
@@ -325,7 +325,7 @@ Dashboard template creator and web design enthusiast. Building beautiful interfa
               <button class="btn-tr">Cancel</button>
             </div>
           </div>
-          <div class="notifications" style="margin-bottom: 32px">
+          <div class="notifications">
             <div class="setting-section">
               <h3>Email Notifications</h3>
               <div class="boxes">
@@ -464,48 +464,48 @@ Dashboard template creator and web design enthusiast. Building beautiful interfa
               <div class="appearance-boxes">
                 <div class="section-row box">
                   <div class="text">
-                    <span>Account Activity</span>
-                    <p>Get notified about sign-ins and security changes</p>
+                    <span>Compact Mode</span>
+                    <p>Reduce spacing for more content</p>
                   </div>
                   <div class="check-box">
-                    <label for="acc">
-                      <input type="checkbox" checked id="acc" />
+                    <label for="com">
+                      <input type="checkbox" id="com" />
                       <div class="toggle"></div>
                     </label>
                   </div>
                 </div>
                 <div class="section-row box">
                   <div class="text">
-                    <span>New Features</span>
-                    <p>Learn about new features and updates</p>
+                    <span>Animations</span>
+                    <p>Enable smooth animations and transitions</p>
                   </div>
                   <div class="check-box">
-                    <label for="fea">
-                      <input type="checkbox" checked id="fea" />
+                    <label for="ani">
+                      <input type="checkbox" checked id="ani" />
                       <div class="toggle"></div>
                     </label>
                   </div>
                 </div>
                 <div class="section-row box">
                   <div class="text">
-                    <span>Weekly Reports</span>
-                    <p>Receive weekly analytics summary</p>
+                    <span>Blur Effects</span>
+                    <p>Enable glassmorphism blur effects</p>
                   </div>
                   <div class="check-box">
-                    <label for="rep">
-                      <input type="checkbox" id="rep" />
+                    <label for="blur">
+                      <input type="checkbox" checked id="blur" />
                       <div class="toggle"></div>
                     </label>
                   </div>
                 </div>
                 <div class="section-row box">
                   <div class="text">
-                    <span>Marketing Emails</span>
-                    <p>Receive news about promotions and offers</p>
+                    <span>Floating Orbs</span>
+                    <p>Show animated background orbs</p>
                   </div>
                   <div class="check-box">
-                    <label for="em">
-                      <input type="checkbox" id="em" />
+                    <label for="orbs">
+                      <input type="checkbox" checked id="orbs" />
                       <div class="toggle"></div>
                     </label>
                   </div>
@@ -515,6 +515,93 @@ Dashboard template creator and web design enthusiast. Building beautiful interfa
             <div class="setting-buttons">
               <button class="btn-em">Apply Changes</button>
               <button class="btn-tr">Reset to Default</button>
+            </div>
+          </div>
+          <div class="billing">
+            <div class="setting-section">
+              <h3>Current Plan</h3>
+              <div class="section-row">
+                <div class="plan">
+                  <div class="plan-row">
+                    <div class="text">
+                      <span>Pro Plan</span>
+                      <p>Billed monthly</p>
+                    </div>
+                    <div class="price">$29</div>
+                  </div>
+                  <div class="setting-buttons">
+                    <button class="btn-em">Upgrade Plan</button>
+                    <button class="btn-tr">Cancel Subscription</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="setting-section">
+              <h3>Payment Method</h3>
+              <div class="section-row">
+                <div class="credit-info">
+                  <div class="visa-shape">Visa</div>
+                  <div class="visa-info">
+                    <span>Visa ending in 4242</span>
+                    <span>Expires 12/2026</span>
+                  </div>
+                </div>
+                <button class="setting-session-btn">Edit</button>
+              </div>
+              <div class="section-row">
+                <button class="setting-session-btn billing-add">
+                  Add Payment Method
+                </button>
+              </div>
+            </div>
+            <div class="setting-section">
+              <h3>Billing History</h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th>Amount</th>
+                    <th>Status</th>
+                    <th>Invoice</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Jan 1, 2025</td>
+                    <td>Pro Plan - Monthly</td>
+                    <td>$29.00</td>
+                    <td>
+                      <div class="setting-status status done">Paid</div>
+                    </td>
+                    <td>
+                      <a href="#" class="setting-table-link">Download</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Dec 1, 2024</td>
+                    <td>Pro Plan - Monthly</td>
+                    <td>$29.00</td>
+                    <td>
+                      <div class="setting-status status done">Paid</div>
+                    </td>
+                    <td>
+                      <a href="#" class="setting-table-link">Download</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Nov 1, 2024</td>
+                    <td>Pro Plan - Monthly</td>
+                    <td>$29.00</td>
+                    <td>
+                      <div class="setting-status status done">Paid</div>
+                    </td>
+                    <td>
+                      <a href="#" class="setting-table-link">Download</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>

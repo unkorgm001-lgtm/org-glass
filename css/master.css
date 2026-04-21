@@ -669,29 +669,29 @@ main {
   padding: 0 10px;
   margin: 0 -10px;
 }
-.recent-body table {
+table {
   width: 100%;
   min-width: 700px;
   border-collapse: collapse;
 }
-.recent-body table tbody tr {
+table tbody tr {
   transition: var(--transition-fast);
 }
-.recent-body table tbody tr:hover {
+table tbody tr:hover {
   background-color: var(--glass-hover);
 }
-.recent-body table tr th {
+table tr th {
   font-weight: 700;
   color: var(--text-muted);
   text-transform: uppercase;
   font-size: 12px;
   border-bottom: 1px solid var(--glass-border);
 }
-.recent-body table tr td {
+table tr td {
   font-size: 14px;
 }
-.recent-body table tr th,
-.recent-body table tr td {
+table tr th,
+table tr td {
   padding: 16px;
   text-align: left;
 }
@@ -739,7 +739,7 @@ main {
   color: var(--text-secondary);
   font-size: 14px;
 }
-.recent-body table tbody tr :last-child {
+.recent-body table tbody tr td:last-child {
   font-weight: bold;
   color: var(--text-primary);
 }
@@ -1011,6 +1011,26 @@ footer span:hover {
   padding: 18px 16px;
 }
 /*! Settings Page */
+.setting-show > div {
+  display: none;
+  opacity: 0;
+  transition: var(--transition-normal);
+  transform: translateY(5px);
+}
+.setting-show > .setting-active {
+  animation: appear 0.4s linear 1 forwards;
+  display: block;
+}
+@keyframes appear {
+  0% {
+    display: none;
+    transform: translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-5px);
+  }
+}
 .main-head-settings .right-nav {
   justify-content: flex-end;
 }
@@ -1022,29 +1042,35 @@ footer span:hover {
 .setting-aside {
   padding: 24px;
 }
-.setting-aside ul li {
+.setting-aside ul button.active,
+.setting-aside ul button:hover {
+  background-color: var(--glass-bg);
+}
+.setting-aside ul button:hover {
+  color: var(--text-primary);
+}
+.setting-aside ul button.active {
+  color: var(--text-primary);
+}
+.setting-aside ul li button {
+  color: var(--text-secondary);
+  border: 0;
+  background-color: transparent;
   padding: 15px;
   border-radius: 12px;
   transition: var(--transition-fast);
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.setting-aside ul li.active,
-.setting-aside ul li:hover {
-  background-color: var(--glass-bg);
-}
-.setting-aside ul li:hover a {
-  color: var(--text-primary);
-}
-.setting-aside ul li.active a {
-  color: var(--text-primary);
-}
-.setting-aside ul li a {
-  color: var(--text-secondary);
-  transition: var(--transition-fast);
-}
-.setting-aside ul li a i {
+.setting-aside ul li i {
   margin-right: 5px;
 }
-.setting-aside ul li:not(:first-child) {
+.setting-aside ul li:not(:first-child) button {
   margin-top: 10px;
 }
 /*! Setting Profile */
@@ -1270,11 +1296,11 @@ footer span:hover {
 .check-box input:checked + .toggle::before {
   left: 27px;
 }
-.session .setting-status {
+.setting-status {
   font-size: 14px;
   padding-left: 20px;
 }
-.session .setting-status::before {
+.setting-status::before {
   width: 6px;
   height: 6px;
   position: absolute;
@@ -1282,7 +1308,7 @@ footer span:hover {
   transform: translateY(-50%);
   left: 9px;
 }
-.session button {
+.setting-session-btn {
   padding: 8px 12px;
   border-radius: 10px;
   background-color: var(--glass-bg);
@@ -1292,18 +1318,110 @@ footer span:hover {
   cursor: pointer;
   transition: var(--transition-normal);
 }
-.session button:hover {
+.setting-session-btn:hover {
   border-color: var(--emerald-light);
   color: var(--text-primary);
 }
+/*! Setting Notifications */
 .notifications .section-row {
   padding: 0;
   border-bottom: 1px solid var(--glass-border);
 }
+/*! Setting Appearance */
 .appearance .box {
   padding: 0;
 }
 .appearance .box-border,
 .appearance .box:not(:last-of-type) {
   border-bottom: 1px solid var(--glass-border);
+}
+/*! Setting Billing */
+.plan {
+  width: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(5, 150, 105, 0.15),
+    rgba(212, 165, 116, 0.15)
+  );
+  border: 1px solid var(--glass-border);
+  padding: var(--card-padding);
+  border-radius: var(--border-radius);
+}
+.plan-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.plan-row span {
+  font-size: 20px;
+  font-weight: 600;
+}
+.plan-row .price {
+  position: relative;
+  font-size: 32px;
+  font-weight: 700;
+}
+.plan-row .price::after {
+  content: "/month";
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-left: 5px;
+}
+.billing .setting-section:nth-of-type(2) .section-row:nth-of-type(1) {
+  border-bottom: 1px solid var(--glass-border);
+}
+.credit-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.visa-shape {
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #010164, #1010ff);
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+}
+.visa-info span:last-of-type {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+.billing-add {
+  position: relative;
+  padding-left: 10px;
+  color: var(--text-primary);
+  font-size: 15px;
+  font-weight: 500;
+}
+.billing-add::before {
+  content: "+";
+  position: relative;
+  margin-right: 10px;
+  padding-left: 10px;
+}
+.billing table thead {
+  margin-bottom: 10px;
+}
+.billing table tr th,
+.billing table tr td {
+  text-align: center;
+}
+.billing table tr td:first-of-type,
+.billing table tr td:nth-of-type(2) {
+  color: var(--text-secondary);
+}
+.billing table tr .status {
+  width: 100%;
+  padding-left: 8px;
+  padding-right: 0px;
+}
+.billing table tr .setting-table-link {
+  color: var(--emerald);
 }
