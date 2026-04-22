@@ -551,7 +551,7 @@ main {
   display: grid;
   grid-template-columns: repeat(12, minmax(40px, 1fr));
   column-gap: 7px;
-  max-width: 500px;
+  max-width: 550px;
 }
 .revenue-analytics-body .right-div {
   display: flex;
@@ -1130,7 +1130,8 @@ footer span:hover {
   font-size: 24px;
   font-weight: bold;
 }
-.settings-content .profile-head .info p {
+.settings-content .profile-head .info p,
+.select-describe p {
   color: var(--text-muted);
   font-size: 14px;
 }
@@ -1247,6 +1248,9 @@ footer span:hover {
 .setting-buttons > :first-child:hover {
   box-shadow: 0 8px 24px rgba(5, 150, 105, 0.3);
   transform: translateY(-2px);
+}
+.select-describe p {
+  margin-top: 10px;
 }
 .setting-buttons > :last-child:hover {
   border-color: var(--emerald-light);
@@ -1404,6 +1408,9 @@ footer span:hover {
   position: relative;
   margin-right: 10px;
   padding-left: 10px;
+}
+.billing table {
+  min-width: 100%;
 }
 .billing table thead {
   margin-bottom: 10px;

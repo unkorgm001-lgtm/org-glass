@@ -1,24 +1,29 @@
 @media (max-width: 1400px) {
   .revenue-analytics-body,
-  .recent-body {
+  .recent-body,
+  .billing .setting-section:last-of-type {
     overflow-x: scroll;
     overflow-y: hidden;
   }
   .revenue-analytics-body::-webkit-scrollbar,
-  .recent-body::-webkit-scrollbar {
+  .recent-body::-webkit-scrollbar,
+  .billing .setting-section:last-of-type::-webkit-scrollbar {
     height: 8px;
   }
   .revenue-analytics-body::-webkit-scrollbar-thumb,
-  .recent-body::-webkit-scrollbar-thumb {
+  .recent-body::-webkit-scrollbar-thumb,
+  .billing .setting-section:last-of-type::-webkit-scrollbar-thumb {
     background: linear-gradient(90deg, var(--emerald), var(--gold));
     border-radius: 4px;
   }
   .revenue-analytics-body::-webkit-scrollbar-thumb:hover,
-  .recent-body::-webkit-scrollbar-thumb:hover {
+  .recent-body::-webkit-scrollbar-thumb:hover,
+  .billing .setting-section:last-of-type::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(90deg, var(--emerald-light), var(--gold-light));
   }
   .revenue-analytics-body::-webkit-scrollbar-track,
-  .recent-body::-webkit-scrollbar-track {
+  .recent-body::-webkit-scrollbar-track,
+  .billing .setting-section:last-of-type::-webkit-scrollbar-track {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 4px;
   }
@@ -43,6 +48,12 @@
   }
   .grid-net > div {
     grid-column: 1/4;
+  }
+  .revenue-analytics-body {
+    grid-template-columns: 1fr 17fr;
+  }
+  .revenue-analytics-body .right-divs {
+    max-width: 800px;
   }
   main,
   footer {
@@ -208,7 +219,7 @@
   .main-head-settings {
     flex-direction: row;
     align-items: center;
-    padding-top: 75px;
+    padding-top: 50px;
   }
   .settings-content ul li {
     width: calc((100% / 2) - 10px);
