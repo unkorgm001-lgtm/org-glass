@@ -224,9 +224,29 @@
   .settings-content ul li {
     width: calc((100% / 2) - 10px);
   }
+  .setting-show .form-fields .form-row,
+  .setting-show .section-row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .setting-show .section-row {
+    row-gap: 10px;
+  }
+  .setting-show .form-fields .form-row .first-inp,
+  .setting-show .form-fields .form-row .last-inp {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .setting-show .form-fields .form-row .first-inp {
+    margin-bottom: 10px;
+  }
+  .setting-show .form-fields .form-row > div {
+    width: 100%;
+  }
 }
 @media (max-width: 350px) {
   .settings-content ul li {
-    width: calc((100% / 1) - 10px);
+    width: 100%;
   }
 }
