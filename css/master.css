@@ -1041,15 +1041,6 @@ footer span:hover {
 }
 .setting-aside {
   padding: 24px;
-  position: fixed;
-  top: 0;
-  right: 0;
-  backdrop-filter: blur(20px);
-  z-index: 14;
-  width: var(--sidebar-width);
-  height: 100%;
-  transform: translateX(100%);
-  transition: var(--transition-normal);
 }
 .setting-aside ul button.active,
 .setting-aside ul button:hover {
