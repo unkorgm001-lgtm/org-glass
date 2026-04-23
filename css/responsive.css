@@ -1,29 +1,29 @@
 @media (max-width: 1400px) {
   .revenue-analytics-body,
   .recent-body,
-  .billing .setting-section:last-of-type {
+  .billing .settings-table-track {
     overflow-x: scroll;
     overflow-y: hidden;
   }
   .revenue-analytics-body::-webkit-scrollbar,
   .recent-body::-webkit-scrollbar,
-  .billing .setting-section:last-of-type::-webkit-scrollbar {
+  .billing .settings-table-track::-webkit-scrollbar {
     height: 8px;
   }
   .revenue-analytics-body::-webkit-scrollbar-thumb,
   .recent-body::-webkit-scrollbar-thumb,
-  .billing .setting-section:last-of-type::-webkit-scrollbar-thumb {
+  .billing .settings-table-track::-webkit-scrollbar-thumb {
     background: linear-gradient(90deg, var(--emerald), var(--gold));
     border-radius: 4px;
   }
   .revenue-analytics-body::-webkit-scrollbar-thumb:hover,
   .recent-body::-webkit-scrollbar-thumb:hover,
-  .billing .setting-section:last-of-type::-webkit-scrollbar-thumb:hover {
+  .billing .settings-table-track::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(90deg, var(--emerald-light), var(--gold-light));
   }
   .revenue-analytics-body::-webkit-scrollbar-track,
   .recent-body::-webkit-scrollbar-track,
-  .billing .setting-section:last-of-type::-webkit-scrollbar-track {
+  .billing .settings-table-track::-webkit-scrollbar-track {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 4px;
   }
@@ -83,7 +83,8 @@
   }
 }
 @media (max-width: 992px) {
-  .mobile-menu {
+  .mobile-menu,
+  .mobile-menu-setting {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,14 +101,26 @@
     cursor: pointer;
     box-shadow: 0 8px 32px rgba(5, 150, 105, 0.3);
   }
-  .mobile-menu span {
+  .mobile-menu-setting {
+    width: 46px;
+    height: 46px;
+    right: 29px;
+    bottom: 90px;
+  }
+  .mobile-menu span,
+  .mobile-menu-setting span {
     min-width: 23px;
     background-color: white;
     height: 3px;
     position: relative;
   }
+  .mobile-menu-setting span {
+    min-width: 20px;
+  }
   .mobile-menu span::before,
-  .mobile-menu span::after {
+  .mobile-menu span::after,
+  .mobile-menu-setting span::before,
+  .mobile-menu-setting span::after {
     content: "";
     width: 100%;
     height: 100%;
@@ -115,10 +128,12 @@
     position: absolute;
     left: 0;
   }
-  .mobile-menu span::before {
+  .mobile-menu span::before,
+  .mobile-menu-setting span::before {
     top: 8px;
   }
-  .mobile-menu span::after {
+  .mobile-menu span::after,
+  .mobile-menu-setting span::after {
     bottom: 8px;
   }
   .main-head nav {
@@ -154,6 +169,9 @@
   footer {
     margin-left: 0;
   }
+  .settings-content ul li {
+    width: 100%;
+  }
 }
 /* Screen 768px Done */
 @media (max-width: 768px) {
@@ -173,9 +191,6 @@
   .days-numbers .cal-day {
     width: 70%;
     margin: 0 auto;
-  }
-  .settings-content ul li {
-    width: calc((100% / 3) - 10px);
   }
 }
 /* Screen 480px Done */
@@ -221,15 +236,19 @@
     align-items: center;
     padding-top: 50px;
   }
-  .settings-content ul li {
-    width: calc((100% / 2) - 10px);
+  .setting-show .form-fields {
+    grid-template-rows: 1fr;
   }
-  .setting-show .form-fields .form-row,
-  .setting-show .section-row {
-    flex-direction: column;
+  .setting-show .form-fields .form-row:has(.first-inp + .last-inp),
+  .setting-show .section-row:has(select) {
     align-items: center;
+    flex-direction: column;
     text-align: center;
   }
+  .setting-show .form-fields .form-row {
+    flex-direction: row;
+  }
+
   .setting-show .section-row {
     row-gap: 10px;
   }
@@ -244,9 +263,37 @@
   .setting-show .form-fields .form-row > div {
     width: 100%;
   }
-}
-@media (max-width: 350px) {
-  .settings-content ul li {
+  .profile .setting-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /*! Element */
+  .settings-content .profile-head,
+  .settings-content .setting-letter {
+    margin-bottom: 15px;
+  }
+  .settings-content .profile-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .billing .setting-section:nth-of-type(2) .section-row:nth-of-type(1) {
+    flex-direction: column;
+  }
+  .plan-row {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  .setting-buttons {
+    flex-direction: column;
+    row-gap: 5px;
+  }
+  .setting-buttons button {
     width: 100%;
+  }
+  .setting-buttons :first-child {
+    margin-bottom: 5px;
   }
 }

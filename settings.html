@@ -25,6 +25,13 @@
     <button class="mobile-menu" id="aside-switch" aria-label="Main Menu">
       <span></span>
     </button>
+    <button
+      class="mobile-menu-setting"
+      id="aside-switch-setting"
+      aria-label="Second Menu"
+    >
+      <span></span>
+    </button>
     <aside id="aside">
       <div class="aside holder">
         <div class="aside-logo">
@@ -108,7 +115,7 @@
         </div>
       </nav>
       <div class="settings-content">
-        <div class="widget-regular setting-aside">
+        <div class="widget-regular setting-aside" id="aside-setting-inner">
           <ul>
             <li>
               <button class="setting-aside-button active" data-name="profile">
@@ -556,52 +563,54 @@ Dashboard template creator and web design enthusiast. Building beautiful interfa
             </div>
             <div class="setting-section">
               <h3>Billing History</h3>
-              <table>
-                <thead>
-                  <tr>
-                    <th>Date</th>
-                    <th>Description</th>
-                    <th>Amount</th>
-                    <th>Status</th>
-                    <th>Invoice</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Jan 1, 2025</td>
-                    <td>Pro Plan - Monthly</td>
-                    <td>$29.00</td>
-                    <td>
-                      <div class="setting-status status done">Paid</div>
-                    </td>
-                    <td>
-                      <a href="#" class="setting-table-link">Download</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Dec 1, 2024</td>
-                    <td>Pro Plan - Monthly</td>
-                    <td>$29.00</td>
-                    <td>
-                      <div class="setting-status status done">Paid</div>
-                    </td>
-                    <td>
-                      <a href="#" class="setting-table-link">Download</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Nov 1, 2024</td>
-                    <td>Pro Plan - Monthly</td>
-                    <td>$29.00</td>
-                    <td>
-                      <div class="setting-status status done">Paid</div>
-                    </td>
-                    <td>
-                      <a href="#" class="setting-table-link">Download</a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+              <div class="settings-table-track">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Date</th>
+                      <th>Description</th>
+                      <th>Amount</th>
+                      <th>Status</th>
+                      <th>Invoice</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Jan 1, 2025</td>
+                      <td>Pro Plan - Monthly</td>
+                      <td>$29.00</td>
+                      <td>
+                        <div class="setting-status status done">Paid</div>
+                      </td>
+                      <td>
+                        <a href="#" class="setting-table-link">Download</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Dec 1, 2024</td>
+                      <td>Pro Plan - Monthly</td>
+                      <td>$29.00</td>
+                      <td>
+                        <div class="setting-status status done">Paid</div>
+                      </td>
+                      <td>
+                        <a href="#" class="setting-table-link">Download</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Nov 1, 2024</td>
+                      <td>Pro Plan - Monthly</td>
+                      <td>$29.00</td>
+                      <td>
+                        <div class="setting-status status done">Paid</div>
+                      </td>
+                      <td>
+                        <a href="#" class="setting-table-link">Download</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </div>
@@ -611,5 +620,37 @@ Dashboard template creator and web design enthusiast. Building beautiful interfa
       <p>Copyright © 2026 Your Company. Designed by <span>ORG UNK</span></p>
     </footer>
     <script src="js/main.js"></script>
+    <script>
+      document.getElementById("aside-switch").onclick = function () {
+        if (
+          document.querySelector("#aside-setting-inner").style.transform ===
+          "translateX(0px)"
+        )
+          document.querySelector("#aside-setting-inner").style.transform =
+            "translateX(100%)";
+        if (
+          document.getElementById("aside").style.transform === "translateX(0px)"
+        )
+          document.getElementById("aside").style.transform =
+            "translateX(-100%)";
+        else document.getElementById("aside").style.transform = "translateX(0)";
+      };
+      document.getElementById("aside-switch-setting").onclick = function () {
+        if (
+          document.getElementById("aside").style.transform === "translateX(0px)"
+        )
+          document.getElementById("aside").style.transform =
+            "translateX(-100%)";
+        if (
+          document.querySelector("#aside-setting-inner").style.transform ===
+          "translateX(0px)"
+        )
+          document.querySelector("#aside-setting-inner").style.transform =
+            "translateX(100%)";
+        else
+          document.querySelector("#aside-setting-inner").style.transform =
+            "translateX(0)";
+      };
+    </script>
   </body>
 </html>
