@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <title>Glass Dash | Login</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="My Dash Board" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="imgs/dashboard.webp" type="image/webp" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&amp;family=Space+Mono:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/constses.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="org org-1"></div>
+    <div class="org org-2"></div>
+    <div class="org org-3"></div>
+    <main>
+      <h1 hidden aria-disabled="true">Title Page</h1>
+      <div class="login-page">
+        <button aria-label="Turn Light/Dark" id="switch">
+          <i class="fa-regular fa-sun"></i>
+          <i class="fa-solid fa-moon" style="display: none"></i>
+        </button>
+        <div class="app widget-regular">
+          <div class="login-head">
+            <div class="login-letter letter">G</div>
+            <h2>Welcome Back</h2>
+            <p>Sign in to continue to GlassDash</p>
+          </div>
+          <div class="login-body">
+            <form>
+              <div class="form-fields">
+                <div class="form-row">
+                  <label>Email Address</label>
+                  <input type="text" placeholder="Enter your email" required />
+                </div>
+                <div class="form-row">
+                  <label>Password</label>
+                  <input
+                    type="text"
+                    placeholder="Enter your password"
+                    required
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="login-footer"></div>
+        </div>
+      </div>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>
